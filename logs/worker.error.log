@@ -28961,3 +28961,207 @@ Exit with code 1 due to network error: ConnectionRefusedError
   warnings.warn(
 /home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
   warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:58: DeprecationWarning: The `push_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
+/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/connections.py:72: DeprecationWarning: The `pop_connection` function is deprecated. Pass the `connection` explicitly instead.
+  warnings.warn(
