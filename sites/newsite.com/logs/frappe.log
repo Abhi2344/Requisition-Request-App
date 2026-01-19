@@ -76,3 +76,96 @@ Form Dict: {}
 2025-11-02 02:14:12,374 WARNING frappe Row #1: Missing UOM replaced with 'Nos'
 Site: newsite.com
 Form Dict: {}
+2025-11-03 15:14:12,420 WARNING frappe Row #1: Missing UOM replaced with 'Nos'
+Site: newsite.com
+Form Dict: {}
+2026-01-19 15:38:55,931 ERROR frappe New Exception collected in error log
+Site: newsite.com
+Form Dict: {'report_name': 'Requisition Request', 'filters': '{}', 'ignore_prepared_report': 'false', 'are_default_filters': 'true', 'cmd': 'frappe.desk.query_report.run'}
+2026-01-19 15:40:28,752 ERROR frappe New Exception collected in error log
+Site: newsite.com
+Form Dict: {'report_name': 'Requisition Request', 'filters': '{"branch":"Nanded","request_date":"2026-01-19"}', 'ignore_prepared_report': 'false', 'are_default_filters': 'false', 'cmd': 'frappe.desk.query_report.run'}
+2026-01-19 15:42:20,466 ERROR frappe New Exception collected in error log
+Site: newsite.com
+Form Dict: {'report_name': 'Requisition Request', 'filters': '{"branch":"Nanded","request_date":"2026-01-19"}', 'ignore_prepared_report': 'false', 'are_default_filters': 'false', 'cmd': 'frappe.desk.query_report.run'}
+2026-01-19 15:45:01,691 ERROR frappe New Exception collected in error log
+Site: newsite.com
+Form Dict: {'report_name': 'Requisition Request', 'filters': '{"branch":"Nanded","request_date":"2026-01-19"}', 'ignore_prepared_report': 'false', 'are_default_filters': 'false', 'cmd': 'frappe.desk.query_report.run'}
+2026-01-19 15:46:33,663 ERROR frappe New Exception collected in error log
+Site: newsite.com
+Form Dict: {'report_name': 'Requisition Request', 'filters': '{"branch":"Nanded","request_date":"2026-01-19"}', 'ignore_prepared_report': 'false', 'are_default_filters': 'false', 'cmd': 'frappe.desk.query_report.run'}
+2026-01-19 15:48:03,244 ERROR frappe New Exception collected in error log
+Site: newsite.com
+Form Dict: {'report_name': 'Requisition Request', 'filters': '{}', 'ignore_prepared_report': 'false', 'are_default_filters': 'true', 'cmd': 'frappe.desk.query_report.run'}
+2026-01-19 15:48:27,856 ERROR frappe New Exception collected in error log
+Site: newsite.com
+Form Dict: {'report_name': 'Requisition Request', 'filters': '{}', 'ignore_prepared_report': 'false', 'are_default_filters': 'true', 'cmd': 'frappe.desk.query_report.run'}
+2026-01-19 15:48:32,271 ERROR frappe New Exception collected in error log
+Site: newsite.com
+Form Dict: {'report_name': 'Requisition Request', 'filters': '{"branch":"Nanded"}', 'ignore_prepared_report': 'false', 'are_default_filters': 'false', 'cmd': 'frappe.desk.query_report.run'}
+2026-01-19 15:51:02,280 ERROR frappe New Exception collected in error log
+Site: newsite.com
+Form Dict: {'report_name': 'Requisition Request', 'filters': '{"branch":"Nanded"}', 'ignore_prepared_report': 'false', 'are_default_filters': 'false', 'cmd': 'frappe.desk.query_report.run'}
+2026-01-19 15:51:45,359 ERROR frappe New Exception collected in error log
+Site: newsite.com
+Form Dict: {'report_name': 'Requisition Request', 'filters': '{"branch":"Nanded"}', 'ignore_prepared_report': 'false', 'are_default_filters': 'false', 'cmd': 'frappe.desk.query_report.run'}
+2026-01-19 15:53:06,760 ERROR frappe New Exception collected in error log
+Site: newsite.com
+Form Dict: {'report_name': 'Requisition Request', 'filters': '{"branch":"Nanded"}', 'ignore_prepared_report': 'false', 'are_default_filters': 'false', 'cmd': 'frappe.desk.query_report.run'}
+2026-01-19 15:53:12,336 ERROR frappe New Exception collected in error log
+Site: newsite.com
+Form Dict: {'report_name': 'Requisition Request', 'filters': '{"branch":"Nanded"}', 'ignore_prepared_report': 'false', 'are_default_filters': 'false', 'cmd': 'frappe.desk.query_report.run'}
+2026-01-19 15:53:21,861 ERROR frappe New Exception collected in error log
+Site: newsite.com
+Form Dict: {'report_name': 'Requisition Request', 'filters': '{}', 'ignore_prepared_report': 'false', 'are_default_filters': 'true', 'cmd': 'frappe.desk.query_report.run'}
+2026-01-19 15:53:48,190 ERROR frappe New Exception collected in error log
+Site: newsite.com
+Form Dict: {'report_name': 'Requisition Request', 'filters': '{}', 'ignore_prepared_report': 'false', 'are_default_filters': 'true', 'cmd': 'frappe.desk.query_report.run'}
+2026-01-19 16:03:44,094 ERROR frappe New Exception collected in error log
+Site: newsite.com
+Form Dict: {'report_name': 'Requisition Request', 'filters': '{}', 'ignore_prepared_report': 'false', 'are_default_filters': 'true', 'cmd': 'frappe.desk.query_report.run'}
+2026-01-19 16:04:41,500 ERROR frappe New Exception collected in error log
+Site: newsite.com
+Form Dict: {'report_name': 'Requisition Request', 'filters': '{}', 'ignore_prepared_report': 'false', 'are_default_filters': 'true', 'cmd': 'frappe.desk.query_report.run'}
+2026-01-19 16:04:50,687 ERROR frappe New Exception collected in error log
+Site: newsite.com
+Form Dict: {'report_name': 'Requisition Request', 'filters': '{}', 'ignore_prepared_report': 'false', 'are_default_filters': 'true', 'cmd': 'frappe.desk.query_report.run'}
+2026-01-19 16:06:20,778 ERROR frappe New Exception collected in error log
+Site: newsite.com
+Form Dict: {'report_name': 'Requisition Request', 'filters': '{}', 'ignore_prepared_report': 'false', 'are_default_filters': 'true', 'cmd': 'frappe.desk.query_report.run'}
+2026-01-19 16:08:00,085 ERROR frappe New Exception collected in error log
+Site: newsite.com
+Form Dict: {'report_name': 'Requisition Request', 'filters': '{}', 'ignore_prepared_report': 'false', 'are_default_filters': 'true', 'cmd': 'frappe.desk.query_report.run'}
+2026-01-19 16:08:52,420 ERROR frappe New Exception collected in error log
+Site: newsite.com
+Form Dict: {'report_name': 'Requisition Request', 'filters': '{}', 'ignore_prepared_report': 'false', 'are_default_filters': 'true', 'cmd': 'frappe.desk.query_report.run'}
+2026-01-19 16:18:25,953 ERROR frappe New Exception collected in error log
+Site: newsite.com
+Form Dict: {'report_name': 'Requisition Request', 'filters': '{}', 'ignore_prepared_report': 'false', 'are_default_filters': 'true', 'cmd': 'frappe.desk.query_report.run'}
+2026-01-19 16:23:03,007 ERROR frappe New Exception collected in error log
+Site: newsite.com
+Form Dict: {'report_name': 'Requisition Request', 'filters': '{}', 'ignore_prepared_report': 'false', 'are_default_filters': 'true', 'cmd': 'frappe.desk.query_report.run'}
+2026-01-19 16:23:29,689 ERROR frappe New Exception collected in error log
+Site: newsite.com
+Form Dict: {'report_name': 'Requisition Request', 'filters': '{}', 'ignore_prepared_report': 'false', 'are_default_filters': 'true', 'cmd': 'frappe.desk.query_report.run'}
+2026-01-19 16:58:10,381 ERROR frappe New Exception collected in error log
+Site: newsite.com
+Form Dict: {'report_name': 'Requisition Request', 'filters': '{}', 'ignore_prepared_report': 'false', 'are_default_filters': 'true', 'cmd': 'frappe.desk.query_report.run'}
+2026-01-19 16:58:39,503 ERROR frappe New Exception collected in error log
+Site: newsite.com
+Form Dict: {'report_name': 'Requisition Request', 'filters': '{}', 'ignore_prepared_report': 'false', 'are_default_filters': 'true', 'cmd': 'frappe.desk.query_report.run'}
+2026-01-19 16:59:49,453 ERROR frappe New Exception collected in error log
+Site: newsite.com
+Form Dict: {'report_name': 'Requisition Request', 'filters': '{}', 'ignore_prepared_report': 'false', 'are_default_filters': 'true', 'cmd': 'frappe.desk.query_report.run'}
+2026-01-19 16:59:56,688 ERROR frappe New Exception collected in error log
+Site: newsite.com
+Form Dict: {'report_name': 'Requisition Request', 'filters': '{"branch":"Nanded"}', 'ignore_prepared_report': 'false', 'are_default_filters': 'false', 'cmd': 'frappe.desk.query_report.run'}
+2026-01-19 17:01:04,195 ERROR frappe New Exception collected in error log
+Site: newsite.com
+Form Dict: {'report_name': 'Requisition Request', 'filters': '{"branch":"Nanded"}', 'ignore_prepared_report': 'false', 'are_default_filters': 'false', 'cmd': 'frappe.desk.query_report.run'}
+2026-01-19 17:02:52,037 ERROR frappe New Exception collected in error log
+Site: newsite.com
+Form Dict: {'report_name': 'Requisition Request', 'filters': '{"branch":"Nanded"}', 'ignore_prepared_report': 'false', 'are_default_filters': 'false', 'cmd': 'frappe.desk.query_report.run'}
+2026-01-19 17:02:57,456 ERROR frappe New Exception collected in error log
+Site: newsite.com
+Form Dict: {'report_name': 'Requisition Request', 'filters': '{"branch":"Nanded"}', 'ignore_prepared_report': 'false', 'are_default_filters': 'false', 'cmd': 'frappe.desk.query_report.run'}

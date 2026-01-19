@@ -1,0 +1,750 @@
+2025-10-31 00:09:28,099 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_settings.energy_point_settings.allocate_review_points because it was found in queue for newsite.com
+2025-10-31 00:09:28,174 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for newsite.com
+2025-10-31 00:09:28,203 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.auto_update_latest_price_in_all_boms because it was found in queue for newsite.com
+2025-10-31 00:09:28,221 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for newsite.com
+2025-10-31 00:09:28,229 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for newsite.com
+2025-10-31 00:09:28,234 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for newsite.com
+2025-10-31 00:09:28,243 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily because it was found in queue for newsite.com
+2025-10-31 00:09:28,252 ERROR scheduler Skipped queueing frappe.automation.doctype.auto_repeat.auto_repeat.make_auto_repeat_entry because it was found in queue for newsite.com
+2025-10-31 00:09:28,257 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for newsite.com
+2025-10-31 00:09:28,261 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for newsite.com
+2025-10-31 00:09:28,266 ERROR scheduler Skipped queueing erpnext.support.doctype.issue.issue.auto_close_tickets because it was found in queue for newsite.com
+2025-10-31 00:09:28,276 ERROR scheduler Skipped queueing erpnext.stock.doctype.serial_no.serial_no.update_maintenance_status because it was found in queue for newsite.com
+2025-10-31 00:09:28,287 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-10-31 00:09:28,296 ERROR scheduler Skipped queueing frappe.core.doctype.log_settings.log_settings.run_log_clean_up because it was found in queue for newsite.com
+2025-10-31 00:09:28,301 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.update_project_sales_billing because it was found in queue for newsite.com
+2025-10-31 00:09:28,312 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.depreciation.post_depreciation_entries because it was found in queue for newsite.com
+2025-10-31 10:45:41,896 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for newsite.com
+2025-10-31 10:45:42,363 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for newsite.com
+2025-10-31 10:45:42,498 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for newsite.com
+2025-10-31 10:45:42,587 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for newsite.com
+2025-10-31 10:45:42,704 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for newsite.com
+2025-10-31 10:45:42,760 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-10-31 10:45:42,864 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for newsite.com
+2025-10-31 10:45:42,992 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for newsite.com
+2025-10-31 10:45:43,062 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for newsite.com
+2025-10-31 10:45:43,261 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for newsite.com
+2025-10-31 10:45:43,312 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for newsite.com
+2025-10-31 10:45:43,560 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.collect_project_status because it was found in queue for newsite.com
+2025-10-31 10:45:43,698 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for newsite.com
+2025-10-31 10:45:43,746 ERROR scheduler Skipped queueing frappe.desk.utils.delete_old_exported_report_files because it was found in queue for newsite.com
+2025-10-31 11:00:59,351 ERROR scheduler Exception in Enqueue Events for Site newsite.com
+Traceback (most recent call last):
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1463, in get_connection
+    if connection.can_read():
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 861, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 444, in can_read
+    return self.read_from_socket(timeout=timeout, raise_on_timeout=False)
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 455, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 699, in connect
+    sock = self.retry.call_with_retry(
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/retry.py", line 46, in call_with_retry
+    return do()
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 700, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1002, in _connect
+    raise err
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 990, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 102, in enqueue_events_for_site
+    enqueue_events(site=site)
+  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 122, in enqueue_events
+    if job_type.enqueue():
+  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
+    if not self.is_job_in_queue():
+  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 95, in is_job_in_queue
+    return is_job_enqueued(self.rq_job_id)
+  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 568, in is_job_enqueued
+    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
+  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 573, in get_job_status
+    job = get_job(job_id)
+  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 580, in get_job
+    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 591, in fetch
+    job.refresh()
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 989, in refresh
+    data = self.connection.hgetall(self.key)
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/commands/core.py", line 4887, in hgetall
+    return self.execute_command("HGETALL", name)
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1266, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1467, in get_connection
+    connection.connect()
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 705, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
+2025-10-31 11:57:01,422 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-10-31 11:57:02,137 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-10-31 11:57:02,219 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-10-31 11:57:02,243 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-10-31 12:01:05,490 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for newsite.com
+2025-10-31 12:01:05,540 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-10-31 12:01:05,568 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for newsite.com
+2025-10-31 12:01:05,588 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-10-31 12:01:05,601 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-10-31 12:01:05,610 ERROR scheduler Skipped queueing frappe.desk.utils.delete_old_exported_report_files because it was found in queue for newsite.com
+2025-10-31 12:01:05,620 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for newsite.com
+2025-10-31 12:01:05,701 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.collect_project_status because it was found in queue for newsite.com
+2025-10-31 12:01:05,736 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for newsite.com
+2025-10-31 12:01:05,752 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for newsite.com
+2025-10-31 12:01:05,765 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for newsite.com
+2025-10-31 12:01:05,772 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for newsite.com
+2025-10-31 12:01:05,777 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for newsite.com
+2025-10-31 12:01:05,783 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for newsite.com
+2025-10-31 12:01:05,787 ERROR scheduler Skipped queueing frappe.email.doctype.newsletter.newsletter.send_scheduled_email because it was found in queue for newsite.com
+2025-10-31 12:01:05,796 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-10-31 12:01:05,800 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for newsite.com
+2025-10-31 12:01:05,805 ERROR scheduler Skipped queueing frappe.search.sqlite_search.build_index_if_not_exists because it was found in queue for newsite.com
+2025-10-31 12:01:05,811 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for newsite.com
+2025-10-31 12:01:05,825 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for newsite.com
+2025-10-31 12:01:05,886 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for newsite.com
+2025-10-31 12:01:05,921 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for newsite.com
+2025-10-31 12:01:05,929 ERROR scheduler Skipped queueing erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization because it was found in queue for newsite.com
+2025-10-31 12:01:05,940 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.project_status_update_reminder because it was found in queue for newsite.com
+2025-10-31 12:01:05,952 ERROR scheduler Skipped queueing frappe.pulse.client.send_queued_events because it was found in queue for newsite.com
+2025-10-31 12:01:05,984 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for newsite.com
+2025-10-31 12:01:06,011 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.hourly_reminder because it was found in queue for newsite.com
+2025-10-31 12:01:06,027 ERROR scheduler Skipped queueing erpnext.utilities.doctype.video.video.update_youtube_data because it was found in queue for newsite.com
+2025-10-31 12:01:06,036 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for newsite.com
+2025-10-31 12:50:54,379 ERROR scheduler Exception in Enqueue Events for Site newsite.com
+Traceback (most recent call last):
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1463, in get_connection
+    if connection.can_read():
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 861, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 444, in can_read
+    return self.read_from_socket(timeout=timeout, raise_on_timeout=False)
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 455, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 699, in connect
+    sock = self.retry.call_with_retry(
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/retry.py", line 46, in call_with_retry
+    return do()
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 700, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1002, in _connect
+    raise err
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 990, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 102, in enqueue_events_for_site
+    enqueue_events(site=site)
+  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 122, in enqueue_events
+    if job_type.enqueue():
+  File "/home/abhishek/frappe-bench/apps/frappe/fra2025-10-31 12:53:22,279 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-10-31 12:53:24,826 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for newsite.com
+2025-10-31 12:53:24,878 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-10-31 12:53:24,897 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-10-31 12:53:25,011 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-10-31 14:12:52,385 ERROR scheduler Exception in Enqueue Events for Site newsite.com
+Traceback (most recent call last):
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1463, in get_connection
+    if connection.can_read():
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 861, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 444, in can_read
+    return self.read_from_socket(timeout=timeout, raise_on_timeout=False)
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 455, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 699, in connect
+    sock = self.retry.call_with_retry(
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/retry.py", line 46, in call_with_retry
+    return do()
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 700, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1002, in _connect
+    raise err
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 990, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 102, in enqueue_events_for_site
+    enqueue_events(site=site)
+  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 122, in enqueue_events
+    if job_type.enqueue():
+  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
+    if not self.is_job_in_queue():
+  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 95, in is_job_in_queue
+    return is_job_enqueued(self.rq_job_id)
+  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 568, in is_job_enqueued
+    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
+  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 573, in get_job_status
+    job = get_job(job_id)
+  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 580, in get_job
+    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 591, in fetch
+    job.refresh()
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 989, in refresh
+    data = self.connection.hgetall(self.key)
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/commands/core.py", line 4887, in hgetall
+    return self.execute_command("HGETALL", name)
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1266, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1467, in get_connection
+    connection.connect()
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 705, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
+2025-10-31 14:21:36,488 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for newsite.com
+2025-10-31 15:09:46,882 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-10-31 15:09:48,025 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-10-31 15:09:48,478 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-10-31 15:11:50,997 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for newsite.com
+2025-10-31 15:21:02,195 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-10-31 15:21:03,009 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for newsite.com
+2025-10-31 15:21:03,048 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-10-31 15:21:03,069 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-10-31 15:57:47,043 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-10-31 15:57:53,725 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-10-31 15:57:53,993 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-10-31 16:41:36,639 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-10-31 19:28:40,262 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for newsite.com
+2025-10-31 19:28:40,447 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for newsite.com
+2025-10-31 19:28:40,487 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for newsite.com
+2025-10-31 19:28:40,623 ERROR scheduler Skipped queueing frappe.search.sqlite_search.build_index_if_not_exists because it was found in queue for newsite.com
+2025-10-31 19:28:40,648 ERROR scheduler Skipped queueing frappe.desk.utils.delete_old_exported_report_files because it was found in queue for newsite.com
+2025-10-31 19:28:40,820 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for newsite.com
+2025-10-31 19:28:40,906 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for newsite.com
+2025-10-31 19:28:40,982 ERROR scheduler Skipped queueing erpnext.accounts.doctype.gl_entry.gl_entry.rename_gle_sle_docs because it was found in queue for newsite.com
+2025-10-31 19:28:41,000 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for newsite.com
+2025-10-31 19:28:41,055 ERROR scheduler Skipped queueing frappe.email.doctype.newsletter.newsletter.send_scheduled_email because it was found in queue for newsite.com
+2025-10-31 19:28:41,407 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for newsite.com
+2025-10-31 19:28:41,525 ERROR scheduler Skipped queueing frappe.pulse.client.send_queued_events because it was found in queue for newsite.com
+2025-10-31 19:28:41,580 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for newsite.com
+2025-10-31 19:28:41,656 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for newsite.com
+2025-10-31 19:28:41,738 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-10-31 19:28:41,771 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for newsite.com
+2025-10-31 19:28:41,838 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for newsite.com
+2025-10-31 19:28:41,890 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for newsite.com
+2025-10-31 19:28:41,971 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-10-31 19:28:42,023 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.collect_project_status because it was found in queue for newsite.com
+2025-10-31 19:28:42,089 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for newsite.com
+2025-10-31 19:28:42,288 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-10-31 19:28:42,428 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for newsite.com
+2025-10-31 19:28:42,579 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for newsite.com
+2025-10-31 19:28:42,651 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for newsite.com
+2025-10-31 19:29:43,267 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for newsite.com
+2025-10-31 19:29:43,563 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for newsite.com
+2025-10-31 19:29:43,796 ERROR scheduler Skipped queueing frappe.desk.utils.delete_old_exported_report_files because it was found in queue for newsite.com
+2025-10-31 19:29:43,870 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for newsite.com
+2025-10-31 19:29:43,922 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for newsite.com
+2025-10-31 19:29:43,968 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for newsite.com
+2025-10-31 19:29:44,086 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for newsite.com
+2025-10-31 19:29:44,550 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for newsite.com
+2025-10-31 19:29:44,628 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for newsite.com
+2025-10-31 19:29:45,064 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for newsite.com
+2025-10-31 19:29:45,121 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for newsite.com
+2025-10-31 19:29:45,403 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for newsite.com
+2025-10-31 22:37:32,124 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for newsite.com
+2025-10-31 22:37:32,514 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for newsite.com
+2025-10-31 22:37:32,671 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for newsite.com
+2025-10-31 22:37:32,697 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for newsite.com
+2025-10-31 22:37:32,881 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for newsite.com
+2025-10-31 22:37:33,392 ERROR scheduler Skipped queueing frappe.desk.utils.delete_old_exported_report_files because it was found in queue for newsite.com
+2025-10-31 22:37:33,767 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for newsite.com
+2025-10-31 22:37:33,813 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for newsite.com
+2025-10-31 22:37:33,854 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for newsite.com
+2025-10-31 22:38:37,068 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for newsite.com
+2025-10-31 22:38:38,075 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for newsite.com
+2025-10-31 22:38:41,903 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for newsite.com
+2025-10-31 23:06:00,401 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-10-31 23:06:00,534 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-10-31 23:06:00,590 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-10-31 23:06:00,801 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-10-31 23:07:01,136 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-10-31 23:07:01,150 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-10-31 23:07:01,274 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-10-31 23:07:01,367 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-10-31 23:08:01,830 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-10-31 23:08:01,903 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-10-31 23:08:01,917 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-10-31 23:08:01,959 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-10-31 23:09:02,276 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-10-31 23:09:02,359 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-10-31 23:09:02,500 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-10-31 23:09:02,546 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-10-31 23:10:02,777 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-10-31 23:10:02,925 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-10-31 23:10:02,972 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-10-31 23:10:02,981 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-10-31 23:11:03,416 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-10-31 23:11:03,521 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-10-31 23:11:03,607 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for newsite.com
+2025-10-31 23:12:03,862 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-10-31 23:12:03,999 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-10-31 23:13:04,319 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-10-31 23:13:04,341 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for newsite.com
+2025-10-31 23:13:04,362 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-10-31 23:13:04,371 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-10-31 23:13:04,387 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-10-31 23:14:04,880 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-10-31 23:14:05,144 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-10-31 23:14:05,195 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-10-31 23:14:05,315 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-10-31 23:14:05,397 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for newsite.com
+2025-10-31 23:15:05,685 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-10-31 23:15:05,764 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-10-31 23:15:05,771 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-10-31 23:15:05,961 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for newsite.com
+2025-10-31 23:15:05,989 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-10-31 23:16:06,165 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for newsite.com
+2025-10-31 23:16:06,175 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-10-31 23:16:06,181 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for newsite.com
+2025-10-31 23:16:06,204 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-10-31 23:16:06,250 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for newsite.com
+2025-10-31 23:16:06,261 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for newsite.com
+2025-10-31 23:16:06,276 ERROR scheduler Skipped queueing frappe.search.sqlite_search.build_index_if_not_exists because it was found in queue for newsite.com
+2025-10-31 23:16:06,304 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-10-31 23:16:06,336 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for newsite.com
+2025-10-31 23:16:06,357 ERROR scheduler Skipped queueing frappe.pulse.client.send_queued_events because it was found in queue for newsite.com
+2025-10-31 23:16:06,362 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for newsite.com
+2025-10-31 23:16:06,371 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for newsite.com
+2025-10-31 23:16:06,397 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-10-31 23:17:06,641 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-10-31 23:17:06,675 ERROR scheduler Skipped queueing frappe.pulse.client.send_queued_events because it was found in queue for newsite.com
+2025-10-31 23:17:06,742 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for newsite.com
+2025-10-31 23:17:06,779 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for newsite.com
+2025-10-31 23:17:06,811 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-10-31 23:17:06,829 ERROR scheduler Skipped queueing frappe.search.sqlite_search.build_index_if_not_exists because it was found in queue for newsite.com
+2025-10-31 23:17:06,842 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for newsite.com
+2025-10-31 23:17:06,856 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-10-31 23:17:06,873 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for newsite.com
+2025-10-31 23:17:06,882 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for newsite.com
+2025-10-31 23:17:06,910 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-10-31 23:17:06,917 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for newsite.com
+2025-10-31 23:17:06,929 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for newsite.com
+2025-10-31 23:18:08,226 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-10-31 23:18:08,322 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-10-31 23:18:08,357 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for newsite.com
+2025-10-31 23:18:08,411 ERROR scheduler Skipped queueing frappe.search.sqlite_search.build_index_if_not_exists because it was found in queue for newsite.com
+2025-10-31 23:18:08,441 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-10-31 23:18:08,446 ERROR scheduler Skipped queueing frappe.pulse.client.send_queued_events because it was found in queue for newsite.com
+2025-10-31 23:18:08,701 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for newsite.com
+2025-10-31 23:18:08,892 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-10-31 23:18:09,001 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for newsite.com
+2025-10-31 23:18:09,061 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for newsite.com
+2025-10-31 23:18:09,099 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for newsite.com
+2025-10-31 23:18:09,122 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for newsite.com
+2025-10-31 23:18:09,288 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for newsite.com
+2025-10-31 23:19:09,675 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-10-31 23:19:09,682 ERROR scheduler Skipped queueing frappe.pulse.client.send_queued_events because it was found in queue for newsite.com
+2025-10-31 23:19:09,717 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for newsite.com
+2025-10-31 23:19:09,744 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-10-31 23:19:09,829 ERROR scheduler Skipped queueing frappe.search.sqlite_search.build_index_if_not_exists because it was found in queue for newsite.com
+2025-10-31 23:19:09,845 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for newsite.com
+2025-10-31 23:19:09,852 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for newsite.com
+2025-10-31 23:19:09,869 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for newsite.com
+2025-10-31 23:19:09,919 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for newsite.com
+2025-10-31 23:19:09,982 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for newsite.com
+2025-10-31 23:19:10,010 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-10-31 23:19:10,013 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-10-31 23:19:10,022 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for newsite.com
+2025-10-31 23:20:10,216 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for newsite.com
+2025-10-31 23:20:10,224 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-10-31 23:20:10,236 ERROR scheduler Skipped queueing frappe.search.sqlite_search.build_index_if_not_exists because it was found in queue for newsite.com
+2025-10-31 23:20:10,242 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for newsite.com
+2025-10-31 23:20:10,286 ERROR scheduler Skipped queueing frappe.pulse.client.send_queued_events because it was found in queue for newsite.com
+2025-10-31 23:20:10,333 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for newsite.com
+2025-10-31 23:20:10,343 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for newsite.com
+2025-10-31 23:20:10,398 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for newsite.com
+2025-10-31 23:20:10,458 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for newsite.com
+2025-10-31 23:20:10,464 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for newsite.com
+2025-10-31 23:20:10,489 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-10-31 23:20:10,504 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-10-31 23:20:10,510 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-10-31 23:21:10,657 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for newsite.com
+2025-10-31 23:21:10,676 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for newsite.com
+2025-10-31 23:21:10,684 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for newsite.com
+2025-10-31 23:21:10,719 ERROR scheduler Skipped queueing frappe.search.sqlite_search.build_index_if_not_exists because it was found in queue for newsite.com
+2025-10-31 23:21:10,725 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for newsite.com
+2025-10-31 23:21:10,732 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for newsite.com
+2025-10-31 23:21:10,737 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-10-31 23:21:10,767 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-10-31 23:21:10,771 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for newsite.com
+2025-10-31 23:21:10,781 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-10-31 23:21:10,803 ERROR scheduler Skipped queueing frappe.pulse.client.send_queued_events because it was found in queue for newsite.com
+2025-10-31 23:21:10,846 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-10-31 23:21:10,872 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for newsite.com
+2025-10-31 23:22:11,052 ERROR scheduler Skipped queueing frappe.search.sqlite_search.build_index_if_not_exists because it was found in queue for newsite.com
+2025-10-31 23:22:11,069 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-10-31 23:22:11,222 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for newsite.com
+2025-10-31 23:22:11,232 ERROR scheduler Skipped queueing frappe.pulse.client.send_queued_events because it was found in queue for newsite.com
+2025-10-31 23:22:11,252 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for newsite.com
+2025-10-31 23:22:11,263 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for newsite.com
+2025-10-31 23:22:11,275 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-10-31 23:22:11,280 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-10-31 23:22:11,334 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for newsite.com
+2025-10-31 23:22:11,347 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for newsite.com
+2025-10-31 23:22:11,359 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-10-31 23:22:11,363 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for newsite.com
+2025-10-31 23:22:11,377 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for newsite.com
+2025-10-31 23:23:11,630 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for newsite.com
+2025-10-31 23:23:11,717 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for newsite.com
+2025-10-31 23:23:11,741 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for newsite.com
+2025-10-31 23:23:11,749 ERROR scheduler Skipped queueing frappe.search.sqlite_search.build_index_if_not_exists because it was found in queue for newsite.com
+2025-10-31 23:23:11,758 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-10-31 23:23:11,774 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for newsite.com
+2025-10-31 23:23:11,804 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for newsite.com
+2025-10-31 23:23:11,812 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for newsite.com
+2025-10-31 23:23:11,863 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for newsite.com
+2025-10-31 23:23:11,873 ERROR scheduler Skipped queueing frappe.pulse.client.send_queued_events because it was found in queue for newsite.com
+2025-10-31 23:23:11,882 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-10-31 23:23:11,902 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-10-31 23:23:11,908 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-10-31 23:24:12,050 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-10-31 23:24:12,068 ERROR scheduler Skipped queueing frappe.pulse.client.send_queued_events because it was found in queue for newsite.com
+2025-10-31 23:24:12,093 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for newsite.com
+2025-10-31 23:24:12,111 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-10-31 23:24:12,122 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-10-31 23:24:12,158 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for newsite.com
+2025-10-31 23:24:12,204 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for newsite.com
+2025-10-31 23:24:12,208 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-10-31 23:24:12,219 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for newsite.com
+2025-10-31 23:24:12,264 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for newsite.com
+2025-10-31 23:24:12,269 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for newsite.com
+2025-10-31 23:24:12,293 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for newsite.com
+2025-10-31 23:24:12,297 ERROR scheduler Skipped queueing frappe.search.sqlite_search.build_index_if_not_exists because it was found in queue for newsite.com
+2025-10-31 23:25:12,434 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-10-31 23:25:12,454 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-10-31 23:25:12,466 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for newsite.com
+2025-10-31 23:25:12,484 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for newsite.com
+2025-10-31 23:25:12,507 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for newsite.com
+2025-10-31 23:25:12,516 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for newsite.com
+2025-10-31 23:25:12,523 ERROR scheduler Skipped queueing frappe.search.sqlite_search.build_index_if_not_exists because it was found in queue for newsite.com
+2025-10-31 23:25:12,637 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-10-31 23:25:12,649 ERROR scheduler Skipped queueing frappe.pulse.client.send_queued_events because it was found in queue for newsite.com
+2025-10-31 23:25:12,653 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-10-31 23:25:12,706 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for newsite.com
+2025-10-31 23:25:12,724 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for newsite.com
+2025-10-31 23:25:12,757 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for newsite.com
+2025-10-31 23:26:12,926 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-10-31 23:26:12,946 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for newsite.com
+2025-10-31 23:26:12,965 ERROR scheduler Skipped queueing frappe.search.sqlite_search.build_index_if_not_exists because it was found in queue for newsite.com
+2025-10-31 23:26:12,970 ERROR scheduler Skipped queueing frappe.pulse.client.send_queued_events because it was found in queue for newsite.com
+2025-10-31 23:26:12,981 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-10-31 23:26:12,989 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for newsite.com
+2025-10-31 23:26:13,002 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for newsite.com
+2025-10-31 23:26:13,019 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-10-31 23:26:13,037 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for newsite.com
+2025-10-31 23:26:13,046 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-10-31 23:26:13,125 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for newsite.com
+2025-10-31 23:26:13,129 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for newsite.com
+2025-10-31 23:26:13,140 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for newsite.com
+2025-10-31 23:27:13,448 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for newsite.com
+2025-10-31 23:27:13,456 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for newsite.com
+2025-10-31 23:27:13,463 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for newsite.com
+2025-10-31 23:27:13,470 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-10-31 23:27:13,567 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-10-31 23:27:13,576 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for newsite.com
+2025-10-31 23:27:13,645 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-10-31 23:27:13,669 ERROR scheduler Skipped queueing frappe.pulse.client.send_queued_events because it was found in queue for newsite.com
+2025-10-31 23:27:13,696 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for newsite.com
+2025-10-31 23:27:13,703 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for newsite.com
+2025-10-31 23:27:13,723 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for newsite.com
+2025-10-31 23:27:13,749 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-10-31 23:27:13,822 ERROR scheduler Skipped queueing frappe.search.sqlite_search.build_index_if_not_exists because it was found in queue for newsite.com
+2025-10-31 23:28:14,021 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for newsite.com
+2025-10-31 23:28:14,040 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for newsite.com
+2025-10-31 23:28:14,045 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for newsite.com
+2025-10-31 23:28:14,077 ERROR scheduler Skipped queueing frappe.pulse.client.send_queued_events because it was found in queue for newsite.com
+2025-10-31 23:28:14,092 ERROR scheduler Skipped queueing frappe.search.sqlite_search.build_index_if_not_exists because it was found in queue for newsite.com
+2025-10-31 23:28:14,108 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for newsite.com
+2025-10-31 23:28:14,128 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for newsite.com
+2025-10-31 23:28:14,167 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for newsite.com
+2025-10-31 23:28:14,186 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-10-31 23:28:14,227 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for newsite.com
+2025-10-31 23:28:14,234 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-10-31 23:28:14,238 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-10-31 23:28:14,244 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-10-31 23:29:14,533 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for newsite.com
+2025-10-31 23:29:14,541 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-10-31 23:29:14,546 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for newsite.com
+2025-10-31 23:29:14,564 ERROR scheduler Skipped queueing frappe.search.sqlite_search.build_index_if_not_exists because it was found in queue for newsite.com
+2025-10-31 23:29:14,568 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for newsite.com
+2025-10-31 23:29:14,583 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for newsite.com
+2025-10-31 23:29:14,624 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for newsite.com
+2025-10-31 23:29:14,636 ERROR scheduler Skipped queueing frappe.pulse.client.send_queued_events because it was found in queue for newsite.com
+2025-10-31 23:29:14,654 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-10-31 23:29:14,667 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for newsite.com
+2025-10-31 23:29:14,696 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-10-31 23:29:14,727 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-10-31 23:29:14,737 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for newsite.com
+2025-11-01 19:54:26,227 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.daily_backup because it was found in queue for newsite.com
+2025-11-01 19:54:26,326 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for newsite.com
+2025-11-01 19:54:26,352 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for newsite.com
+2025-11-01 19:54:26,377 ERROR scheduler Skipped queueing frappe.core.doctype.user_invitation.user_invitation.mark_expired_invitations because it was found in queue for newsite.com
+2025-11-01 19:54:26,442 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_log.energy_point_log.send_monthly_summary because it was found in queue for newsite.com
+2025-11-01 19:54:26,493 ERROR scheduler Skipped queueing erpnext.accounts.utils.auto_create_exchange_rate_revaluation_monthly because it was found in queue for newsite.com
+2025-11-01 19:54:26,549 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily because it was found in queue for newsite.com
+2025-11-01 19:54:26,588 ERROR scheduler Skipped queueing frappe.desk.doctype.event.event.send_event_digest because it was found in queue for newsite.com
+2025-11-01 19:54:26,630 ERROR scheduler Skipped queueing erpnext.controllers.accounts_controller.update_invoice_status because it was found in queue for newsite.com
+2025-11-01 19:54:26,645 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily because it was found in queue for newsite.com
+2025-11-01 19:54:26,698 ERROR scheduler Skipped queueing frappe.email.doctype.auto_email_report.auto_email_report.send_daily because it was found in queue for newsite.com
+2025-11-01 19:54:26,802 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.remove_unverified_record because it was found in queue for newsite.com
+2025-11-01 19:54:26,879 ERROR scheduler Skipped queueing erpnext.accounts.deferred_revenue.process_deferred_accounting because it was found in queue for newsite.com
+2025-11-01 19:54:26,914 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for newsite.com
+2025-11-01 19:54:26,991 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for newsite.com
+2025-11-01 19:54:27,144 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for newsite.com
+2025-11-01 19:54:27,265 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for newsite.com
+2025-11-01 19:54:27,409 ERROR scheduler Skipped queueing erpnext.stock.reorder_item.reorder_item because it was found in queue for newsite.com
+2025-11-01 19:54:27,456 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_monthly because it was found in queue for newsite.com
+2025-11-01 19:54:27,924 ERROR scheduler Skipped queueing erpnext.setup.doctype.email_digest.email_digest.send because it was found in queue for newsite.com
+2025-11-01 19:54:27,993 ERROR scheduler Skipped queueing frappe.automation.doctype.auto_repeat.auto_repeat.make_auto_repeat_entry because it was found in queue for newsite.com
+2025-11-01 19:54:28,113 ERROR scheduler Skipped queueing erpnext.projects.doctype.task.task.set_tasks_as_overdue because it was found in queue for newsite.com
+2025-11-01 19:54:28,213 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for newsite.com
+2025-11-01 19:54:28,342 ERROR scheduler Skipped queueing erpnext.accounts.utils.run_ledger_health_checks because it was found in queue for newsite.com
+2025-11-01 19:54:28,355 ERROR scheduler Skipped queueing erpnext.support.doctype.issue.issue.auto_close_tickets because it was found in queue for newsite.com
+2025-11-01 19:54:28,407 ERROR scheduler Skipped queueing erpnext.selling.doctype.quotation.quotation.set_expired_status because it was found in queue for newsite.com
+2025-11-01 19:54:28,435 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for newsite.com
+2025-11-01 19:54:28,482 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_statement_of_accounts.process_statement_of_accounts.send_auto_email because it was found in queue for newsite.com
+2025-11-01 19:54:28,510 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for newsite.com
+2025-11-01 19:54:28,650 ERROR scheduler Skipped queueing frappe.core.doctype.log_settings.log_settings.run_log_clean_up because it was found in queue for newsite.com
+2025-11-01 19:54:28,664 ERROR scheduler Skipped queueing erpnext.crm.utils.open_leads_opportunities_based_on_todays_event because it was found in queue for newsite.com
+2025-11-01 19:54:28,707 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.asset.make_post_gl_entry because it was found in queue for newsite.com
+2025-11-01 19:54:28,886 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.collect_project_status because it was found in queue for newsite.com
+2025-11-01 19:54:29,067 ERROR scheduler Skipped queueing erpnext.crm.doctype.email_campaign.email_campaign.send_email_to_leads_or_contacts because it was found in queue for newsite.com
+2025-11-01 19:54:29,210 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.update_project_sales_billing because it was found in queue for newsite.com
+2025-11-01 19:54:29,253 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for newsite.com
+2025-11-01 19:54:29,319 ERROR scheduler Skipped queueing frappe.sessions.clear_expired_sessions because it was found in queue for newsite.com
+2025-11-01 19:54:29,410 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for newsite.com
+2025-11-01 19:54:29,505 ERROR scheduler Skipped queueing frappe.email.doctype.newsletter.newsletter.send_scheduled_email because it was found in queue for newsite.com
+2025-11-01 19:54:29,564 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for newsite.com
+2025-11-01 19:54:29,599 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_subscription.process_subscription.create_subscription_process because it was found in queue for newsite.com
+2025-11-01 19:54:29,671 ERROR scheduler Skipped queueing erpnext.utilities.doctype.video.video.update_youtube_data because it was found in queue for newsite.com
+2025-11-01 19:54:29,725 ERROR scheduler Skipped queueing frappe.desk.notifications.clear_notifications because it was found in queue for newsite.com
+2025-11-01 19:54:29,753 ERROR scheduler Skipped queueing frappe.desk.utils.delete_old_exported_report_files because it was found in queue for newsite.com
+2025-11-01 19:54:29,771 ERROR scheduler Skipped queueing erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization because it was found in queue for newsite.com
+2025-11-01 19:54:29,778 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for newsite.com
+2025-11-01 19:54:29,796 ERROR scheduler Skipped queueing erpnext.quality_management.doctype.quality_review.quality_review.review because it was found in queue for newsite.com
+2025-11-01 19:54:29,806 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_settings.energy_point_settings.allocate_review_points because it was found in queue for newsite.com
+2025-11-01 19:54:29,813 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for newsite.com
+2025-11-01 19:54:29,847 ERROR scheduler Skipped queueing frappe.pulse.client.send_queued_events because it was found in queue for newsite.com
+2025-11-01 19:54:29,898 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.depreciation.post_depreciation_entries because it was found in queue for newsite.com
+2025-11-01 19:54:29,969 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.auto_update_latest_price_in_all_boms because it was found in queue for newsite.com
+2025-11-01 19:54:29,983 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-11-01 19:55:30,254 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for newsite.com
+2025-11-01 19:55:30,482 ERROR scheduler Skipped queueing frappe.email.doctype.auto_email_report.auto_email_report.send_daily because it was found in queue for newsite.com
+2025-11-01 19:55:30,564 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for newsite.com
+2025-11-01 19:55:30,619 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for newsite.com
+2025-11-01 19:55:30,671 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for newsite.com
+2025-11-01 19:55:30,694 ERROR scheduler Skipped queueing erpnext.setup.doctype.email_digest.email_digest.send because it was found in queue for newsite.com
+2025-11-01 19:55:30,717 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for newsite.com
+2025-11-01 19:55:30,751 ERROR scheduler Skipped queueing erpnext.accounts.utils.auto_create_exchange_rate_revaluation_monthly because it was found in queue for newsite.com
+2025-11-01 19:55:30,758 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.depreciation.post_depreciation_entries because it was found in queue for newsite.com
+2025-11-01 19:55:30,857 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_subscription.process_subscription.create_subscription_process because it was found in queue for newsite.com
+2025-11-01 19:55:30,909 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for newsite.com
+2025-11-01 19:55:30,933 ERROR scheduler Skipped queueing frappe.core.doctype.user_invitation.user_invitation.mark_expired_invitations because it was found in queue for newsite.com
+2025-11-01 19:55:30,985 ERROR scheduler Skipped queueing frappe.desk.notifications.clear_notifications because it was found in queue for newsite.com
+2025-11-01 19:55:31,004 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_settings.energy_point_settings.allocate_review_points because it was found in queue for newsite.com
+2025-11-01 19:55:31,022 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.daily_backup because it was found in queue for newsite.com
+2025-11-01 19:55:31,071 ERROR scheduler Skipped queueing frappe.automation.doctype.auto_repeat.auto_repeat.make_auto_repeat_entry because it was found in queue for newsite.com
+2025-11-01 19:55:31,088 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for newsite.com
+2025-11-01 19:55:31,095 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for newsite.com
+2025-11-01 19:55:31,101 ERROR scheduler Skipped queueing erpnext.accounts.deferred_revenue.process_deferred_accounting because it was found in queue for newsite.com
+2025-11-01 19:55:31,115 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily because it was found in queue for newsite.com
+2025-11-01 19:55:31,119 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for newsite.com
+2025-11-01 19:55:31,123 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily because it was found in queue for newsite.com
+2025-11-01 19:55:31,129 ERROR scheduler Skipped queueing frappe.core.doctype.log_settings.log_settings.run_log_clean_up because it was found in queue for newsite.com
+2025-11-01 19:55:31,137 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for newsite.com
+2025-11-01 19:55:31,140 ERROR scheduler Skipped queueing frappe.sessions.clear_expired_sessions because it was found in queue for newsite.com
+2025-11-01 19:55:31,146 ERROR scheduler Skipped queueing frappe.desk.utils.delete_old_exported_report_files because it was found in queue for newsite.com
+2025-11-01 19:55:31,155 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_monthly because it was found in queue for newsite.com
+2025-11-01 19:55:31,228 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.remove_unverified_record because it was found in queue for newsite.com
+2025-11-01 19:55:31,232 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.auto_update_latest_price_in_all_boms because it was found in queue for newsite.com
+2025-11-01 19:55:31,238 ERROR scheduler Skipped queueing erpnext.crm.utils.open_leads_opportunities_based_on_todays_event because it was found in queue for newsite.com
+2025-11-01 21:56:56,899 ERROR scheduler Exception in Enqueue Events for Site newsite.com
+Traceback (most recent call last):
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1463, in get_connection
+    if connection.can_read():
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 861, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 444, in can_read
+    return self.read_from_socket(timeout=timeout, raise_on_timeout=False)
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 455, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 699, in connect
+    sock = self.retry.call_with_retry(
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/retry.py", line 46, in call_with_retry
+    return do()
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 700, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1002, in _connect
+    raise err
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 990, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 102, in enqueue_events_for_site
+    enqueue_events(site=site)
+  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 122, in enqueue_events
+    if job_type.enqueue():
+  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
+    if not self.is_job_in_queue():
+  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 95, in is_job_in_queue
+    return is_job_enqueued(self.rq_job_id)
+  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 568, in is_job_enqueued
+    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
+  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 573, in get_job_status
+    job = get_job(job_id)
+  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 580, in get_job
+    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 591, in fetch
+    job.refresh()
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 989, in refresh
+    data = self.connection.hgetall(self.key)
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/commands/core.py", line 4887, in hgetall
+    return self.execute_command("HGETALL", name)
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1266, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1467, in get_connection
+    connection.connect()
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 705, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
+2025-11-01 21:59:30,966 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-11-01 21:59:32,214 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-11-01 23:26:56,477 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for newsite.com
+2025-11-01 23:26:56,946 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for newsite.com
+2025-11-01 23:26:56,993 ERROR scheduler Skipped queueing frappe.desk.utils.delete_old_exported_report_files because it was found in queue for newsite.com
+2025-11-01 23:26:57,144 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for newsite.com
+2025-11-01 23:26:57,151 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for newsite.com
+2025-11-01 23:26:57,239 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for newsite.com
+2025-11-01 23:26:57,480 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for newsite.com
+2025-11-01 23:26:57,589 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for newsite.com
+2025-11-01 23:26:57,695 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for newsite.com
+2025-11-01 23:26:57,877 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for newsite.com
+2025-11-01 23:30:08,971 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-11-01 23:30:10,186 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-11-01 23:30:10,367 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-11-01 23:41:24,523 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-11-01 23:41:24,950 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-11-01 23:41:24,967 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-11-01 23:41:25,066 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-11-01 23:42:25,546 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-11-01 23:42:25,976 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for newsite.com
+2025-11-01 23:42:25,985 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-11-01 23:42:26,028 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-11-01 23:42:26,129 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-11-01 23:43:26,440 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-11-01 23:43:26,515 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-11-01 23:43:26,536 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-11-01 23:43:26,835 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-11-01 23:43:26,907 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for newsite.com
+2025-11-01 23:57:39,742 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-11-01 23:57:39,784 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-11-01 23:57:39,971 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-11-01 23:57:40,341 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-11-01 23:58:40,979 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-11-01 23:58:41,169 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-11-01 23:58:41,188 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-11-01 23:58:41,342 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-11-01 23:59:41,842 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-11-01 23:59:42,262 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-11-01 23:59:42,426 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-11-01 23:59:42,437 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-11-02 00:00:42,796 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-11-02 00:00:43,632 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-11-02 00:00:43,781 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-11-02 00:00:43,820 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-11-02 00:01:44,217 ERROR scheduler Skipped queueing frappe.email.doctype.notification.notification.trigger_daily_alerts because it was found in queue for newsite.com
+2025-11-02 00:01:44,244 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.asset.make_post_gl_entry because it was found in queue for newsite.com
+2025-11-02 00:01:44,279 ERROR scheduler Skipped queueing erpnext.support.doctype.service_level_agreement.service_level_agreement.check_agreement_status because it was found in queue for newsite.com
+2025-11-02 00:01:44,297 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_statement_of_accounts.process_statement_of_accounts.send_auto_email because it was found in queue for newsite.com
+2025-11-02 00:01:44,381 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_subscription.process_subscription.create_subscription_process because it was found in queue for newsite.com
+2025-11-02 00:01:44,412 ERROR scheduler Skipped queueing erpnext.quality_management.doctype.quality_review.quality_review.review because it was found in queue for newsite.com
+2025-11-02 00:01:44,453 ERROR scheduler Skipped queueing erpnext.setup.doctype.email_digest.email_digest.send because it was found in queue for newsite.com
+2025-11-02 00:01:44,474 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.asset.update_maintenance_status because it was found in queue for newsite.com
+2025-11-02 00:01:44,503 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for newsite.com
+2025-11-02 00:01:44,512 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset_maintenance_log.asset_maintenance_log.update_asset_maintenance_log_status because it was found in queue for newsite.com
+2025-11-02 00:01:44,549 ERROR scheduler Skipped queueing frappe.sessions.clear_expired_sessions because it was found in queue for newsite.com
+2025-11-02 00:01:44,577 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.update_project_sales_billing because it was found in queue for newsite.com
+2025-11-02 00:01:44,602 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_weekly_updates because it was found in queue for newsite.com
+2025-11-02 00:01:44,639 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for newsite.com
+2025-11-02 00:01:44,660 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for newsite.com
+2025-11-02 00:01:44,676 ERROR scheduler Skipped queueing erpnext.crm.utils.open_leads_opportunities_based_on_todays_event because it was found in queue for newsite.com
+2025-11-02 00:01:44,702 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for newsite.com
+2025-11-02 00:01:44,755 ERROR scheduler Skipped queueing erpnext.controllers.accounts_controller.update_invoice_status because it was found in queue for newsite.com
+2025-11-02 00:01:44,801 ERROR scheduler Skipped queueing erpnext.support.doctype.issue.issue.auto_close_tickets because it was found in queue for newsite.com
+2025-11-02 00:01:44,818 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_log.energy_point_log.send_weekly_summary because it was found in queue for newsite.com
+2025-11-02 00:01:44,833 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_weekly because it was found in queue for newsite.com
+2025-11-02 00:01:44,868 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for newsite.com
+2025-11-02 00:01:44,903 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-11-02 00:01:44,936 ERROR scheduler Skipped queueing erpnext.crm.doctype.email_campaign.email_campaign.send_email_to_leads_or_contacts because it was found in queue for newsite.com
+2025-11-02 00:01:44,975 ERROR scheduler Skipped queueing erpnext.accounts.utils.auto_create_exchange_rate_revaluation_daily because it was found in queue for newsite.com
+2025-11-02 00:01:44,997 ERROR scheduler Skipped queueing frappe.desk.doctype.event.event.send_event_digest because it was found in queue for newsite.com
+2025-11-02 00:01:45,022 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_daily_updates because it was found in queue for newsite.com
+2025-11-02 00:01:45,068 ERROR scheduler Skipped queueing erpnext.crm.doctype.contract.contract.update_status_for_contracts because it was found in queue for newsite.com
+2025-11-02 00:01:45,099 ERROR scheduler Skipped queueing erpnext.buying.doctype.supplier_quotation.supplier_quotation.set_expired_status because it was found in queue for newsite.com
+2025-11-02 00:01:45,121 ERROR scheduler Skipped queueing erpnext.buying.doctype.supplier_scorecard.supplier_scorecard.refresh_scorecards because it was found in queue for newsite.com
+2025-11-02 00:01:45,128 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.depreciation.post_depreciation_entries because it was found in queue for newsite.com
+2025-11-02 00:01:45,146 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.hourly_reminder because it was found in queue for newsite.com
+2025-11-02 00:01:45,158 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-11-02 00:01:45,183 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.project_status_update_reminder because it was found in queue for newsite.com
+2025-11-02 00:01:45,212 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for newsite.com
+2025-11-02 00:01:45,229 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.remove_unverified_record because it was found in queue for newsite.com
+2025-11-02 00:01:45,239 ERROR scheduler Skipped queueing erpnext.selling.doctype.quotation.quotation.set_expired_status because it was found in queue for newsite.com
+2025-11-02 00:01:45,244 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for newsite.com
+2025-11-02 00:01:45,257 ERROR scheduler Skipped queueing frappe.email.doctype.auto_email_report.auto_email_report.send_daily because it was found in queue for newsite.com
+2025-11-02 00:01:45,268 ERROR scheduler Skipped queueing erpnext.stock.doctype.serial_no.serial_no.update_maintenance_status because it was found in queue for newsite.com
+2025-11-02 00:01:45,272 ERROR scheduler Skipped queueing frappe.search.sqlite_search.build_index_if_not_exists because it was found in queue for newsite.com
+2025-11-02 00:01:45,279 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for newsite.com
+2025-11-02 00:01:45,283 ERROR scheduler Skipped queueing frappe.desk.notifications.clear_notifications because it was found in queue for newsite.com
+2025-11-02 00:01:45,288 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.weekly_backup because it was found in queue for newsite.com
+2025-11-02 00:01:45,292 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for newsite.com
+2025-11-02 00:01:45,297 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for newsite.com
+2025-11-02 00:01:45,301 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.daily_backup because it was found in queue for newsite.com
+2025-11-02 00:01:45,307 ERROR scheduler Skipped queueing erpnext.utilities.doctype.video.video.update_youtube_data because it was found in queue for newsite.com
+2025-11-02 00:01:45,312 ERROR scheduler Skipped queueing erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization because it was found in queue for newsite.com
+2025-11-02 00:01:45,373 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-11-02 00:01:45,391 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for newsite.com
+2025-11-02 00:01:45,399 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily because it was found in queue for newsite.com
+2025-11-02 00:01:45,403 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.collect_project_status because it was found in queue for newsite.com
+2025-11-02 00:01:45,409 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_weekly because it was found in queue for newsite.com
+2025-11-02 00:01:45,432 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_settings.energy_point_settings.allocate_review_points because it was found in queue for newsite.com
+2025-11-02 00:01:45,502 ERROR scheduler Skipped queueing erpnext.accounts.utils.auto_create_exchange_rate_revaluation_weekly because it was found in queue for newsite.com
+2025-11-02 00:01:45,520 ERROR scheduler Skipped queueing erpnext.crm.doctype.email_campaign.email_campaign.set_email_campaign_status because it was found in queue for newsite.com
+2025-11-02 00:01:45,532 ERROR scheduler Skipped queueing erpnext.projects.doctype.task.task.set_tasks_as_overdue because it was found in queue for newsite.com
+2025-11-02 00:01:45,551 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for newsite.com
+2025-11-02 00:01:45,561 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.send_project_status_email_to_users because it was found in queue for newsite.com
+2025-11-02 00:01:45,574 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for newsite.com
+2025-11-02 00:01:45,607 ERROR scheduler Skipped queueing erpnext.setup.doctype.company.company.cache_companies_monthly_sales_history because it was found in queue for newsite.com
+2025-11-02 00:01:45,617 ERROR scheduler Skipped queueing frappe.utils.change_log.check_for_update because it was found in queue for newsite.com
+2025-11-02 00:01:45,624 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for newsite.com
+2025-11-02 00:01:45,630 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for newsite.com

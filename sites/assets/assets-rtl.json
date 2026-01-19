@@ -1,13 +1,13 @@
 {
-    "rtl_desk.bundle.css": "/assets/frappe/dist/css-rtl/desk.bundle.VRXASXD4.css",
-    "rtl_email.bundle.css": "/assets/frappe/dist/css-rtl/email.bundle.2NJG7BSJ.css",
-    "rtl_login.bundle.css": "/assets/frappe/dist/css-rtl/login.bundle.IRZ6O3KN.css",
-    "rtl_print.bundle.css": "/assets/frappe/dist/css-rtl/print.bundle.UIYKULTT.css",
-    "rtl_print_format.bundle.css": "/assets/frappe/dist/css-rtl/print_format.bundle.TUXMITZ3.css",
-    "rtl_report.bundle.css": "/assets/frappe/dist/css-rtl/report.bundle.6XITCSLU.css",
-    "rtl_web_form.bundle.css": "/assets/frappe/dist/css-rtl/web_form.bundle.C3RL4PCN.css",
-    "rtl_website.bundle.css": "/assets/frappe/dist/css-rtl/website.bundle.QIR6ADFC.css",
-    "rtl_erpnext-web.bundle.css": "/assets/erpnext/dist/css-rtl/erpnext-web.bundle.6S6F4SCJ.css",
-    "rtl_erpnext.bundle.css": "/assets/erpnext/dist/css-rtl/erpnext.bundle.7BMARSGG.css",
-    "rtl_erpnext_email.bundle.css": "/assets/erpnext/dist/css-rtl/erpnext_email.bundle.YQDKQWCO.css"
+    "rtl_desk.bundle.css": "/assets/frappe/dist/css-rtl/desk.bundle.CFJWAE2Q.css",
+    "rtl_email.bundle.css": "/assets/frappe/dist/css-rtl/email.bundle.DLAK2ZLX.css",
+    "rtl_login.bundle.css": "/assets/frappe/dist/css-rtl/login.bundle.BJSQAZZH.css",
+    "rtl_print.bundle.css": "/assets/frappe/dist/css-rtl/print.bundle.A4LS7DHR.css",
+    "rtl_print_format.bundle.css": "/assets/frappe/dist/css-rtl/print_format.bundle.NHIIMYGW.css",
+    "rtl_report.bundle.css": "/assets/frappe/dist/css-rtl/report.bundle.ON2WL357.css",
+    "rtl_web_form.bundle.css": "/assets/frappe/dist/css-rtl/web_form.bundle.QZ5AKSSX.css",
+    "rtl_website.bundle.css": "/assets/frappe/dist/css-rtl/website.bundle.2OBQHKSZ.css",
+    "rtl_erpnext-web.bundle.css": "/assets/erpnext/dist/css-rtl/erpnext-web.bundle.PKNRRFBW.css",
+    "rtl_erpnext.bundle.css": "/assets/erpnext/dist/css-rtl/erpnext.bundle.HZU2ZEI5.css",
+    "rtl_erpnext_email.bundle.css": "/assets/erpnext/dist/css-rtl/erpnext_email.bundle.HQZKE7SO.css"
 }

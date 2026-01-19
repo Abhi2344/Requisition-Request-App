@@ -17,5 +17,35 @@
         "required": [],
         "idx": 2,
         "version": "15.84.0"
+    },
+    "school": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "608ccc58fc709e87d06493488b358cc231b36b84",
+            "branch": "develop"
+        },
+        "required": [],
+        "idx": 3,
+        "version": "0.0.1"
+    },
+    "posawesome": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "ea98251777b0986dce727b930c06a5f7be20bf1e",
+            "branch": "develop"
+        },
+        "required": [],
+        "idx": 4,
+        "version": "15.17.0"
+    },
+    "requisition_app": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "11187e69115a6bafc59746610ef1c84d2427d7ff",
+            "branch": "develop"
+        },
+        "required": [],
+        "idx": 5,
+        "version": "0.0.1"
     }
 }

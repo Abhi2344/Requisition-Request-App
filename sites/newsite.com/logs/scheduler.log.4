@@ -1,33 +1,129 @@
-2025-10-27 09:57:06,999 ERROR scheduler Exception in Enqueue Events for Site newsite.com
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 99, in enqueue_events_for_site
-    if is_scheduler_inactive():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 143, in is_scheduler_inactive
-    if is_scheduler_disabled(verbose=verbose):
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 156, in is_scheduler_disabled
-    frappe.db.get_single_value("System Settings", "enable_scheduler")
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/database/database.py", line 839, in get_single_value
-    df = frappe.get_meta(doctype).get_field(fieldname)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/__init__.py", line 1338, in get_meta
-    return frappe.model.meta.get_meta(doctype, cached=cached)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/model/meta.py", line 71, in get_meta
-    meta = Meta(doctype)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/model/meta.py", line 125, in __init__
-    super().__init__("DocType", doctype)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/model/document.py", line 126, in __init__
-    self.load_from_db()
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/model/meta.py", line 131, in load_from_db
-    super().load_from_db()
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/model/document.py", line 179, in load_from_db
-    frappe.throw(
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/__init__.py", line 609, in throw
-    msgprint(
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/__init__.py", line 574, in msgprint
-    _raise_exception()
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/__init__.py", line 525, in _raise_exception
-    raise exc
-frappe.exceptions.DoesNotExistError: DocType System Settings not found
-2025-10-28 00:07:36,913 ERROR scheduler Exception in Enqueue Events for Site newsite.com
+2025-11-02 02:05:03,558 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for newsite.com
+2025-11-02 02:05:03,679 ERROR scheduler Skipped queueing frappe.email.doctype.newsletter.newsletter.send_scheduled_email because it was found in queue for newsite.com
+2025-11-02 02:05:03,697 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for newsite.com
+2025-11-02 02:05:03,743 ERROR scheduler Skipped queueing frappe.pulse.client.send_queued_events because it was found in queue for newsite.com
+2025-11-02 02:05:03,766 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-11-02 02:06:03,902 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for newsite.com
+2025-11-02 02:06:03,909 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-11-02 02:06:03,919 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for newsite.com
+2025-11-02 02:06:03,935 ERROR scheduler Skipped queueing frappe.search.sqlite_search.build_index_if_not_exists because it was found in queue for newsite.com
+2025-11-02 02:06:03,941 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-11-02 02:06:03,948 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-11-02 02:06:03,952 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for newsite.com
+2025-11-02 02:06:04,027 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.project_status_update_reminder because it was found in queue for newsite.com
+2025-11-02 02:06:04,032 ERROR scheduler Skipped queueing frappe.desk.utils.delete_old_exported_report_files because it was found in queue for newsite.com
+2025-11-02 02:06:04,042 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for newsite.com
+2025-11-02 02:06:04,065 ERROR scheduler Skipped queueing erpnext.utilities.doctype.video.video.update_youtube_data because it was found in queue for newsite.com
+2025-11-02 02:06:04,081 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for newsite.com
+2025-11-02 02:06:04,087 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for newsite.com
+2025-11-02 02:06:04,108 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for newsite.com
+2025-11-02 02:06:04,122 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for newsite.com
+2025-11-02 02:06:04,128 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for newsite.com
+2025-11-02 02:06:04,133 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.collect_project_status because it was found in queue for newsite.com
+2025-11-02 02:06:04,156 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-11-02 02:06:04,164 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for newsite.com
+2025-11-02 02:06:04,169 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for newsite.com
+2025-11-02 02:06:04,176 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for newsite.com
+2025-11-02 02:06:04,181 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.hourly_reminder because it was found in queue for newsite.com
+2025-11-02 02:06:04,191 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for newsite.com
+2025-11-02 02:06:04,205 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for newsite.com
+2025-11-02 02:06:04,210 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for newsite.com
+2025-11-02 02:06:04,298 ERROR scheduler Skipped queueing frappe.email.doctype.newsletter.newsletter.send_scheduled_email because it was found in queue for newsite.com
+2025-11-02 02:06:04,338 ERROR scheduler Skipped queueing erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization because it was found in queue for newsite.com
+2025-11-02 02:06:04,383 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for newsite.com
+2025-11-02 02:06:04,413 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for newsite.com
+2025-11-02 02:06:04,423 ERROR scheduler Skipped queueing frappe.pulse.client.send_queued_events because it was found in queue for newsite.com
+2025-11-02 02:07:04,669 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for newsite.com
+2025-11-02 02:07:04,706 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for newsite.com
+2025-11-02 02:07:04,734 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for newsite.com
+2025-11-02 02:07:04,739 ERROR scheduler Skipped queueing frappe.pulse.client.send_queued_events because it was found in queue for newsite.com
+2025-11-02 02:07:04,744 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for newsite.com
+2025-11-02 02:07:04,759 ERROR scheduler Skipped queueing erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization because it was found in queue for newsite.com
+2025-11-02 02:07:04,784 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for newsite.com
+2025-11-02 02:07:04,820 ERROR scheduler Skipped queueing erpnext.utilities.doctype.video.video.update_youtube_data because it was found in queue for newsite.com
+2025-11-02 02:07:04,829 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-11-02 02:07:04,833 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for newsite.com
+2025-11-02 02:07:04,848 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-11-02 02:07:04,861 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for newsite.com
+2025-11-02 02:07:04,937 ERROR scheduler Skipped queueing frappe.email.doctype.newsletter.newsletter.send_scheduled_email because it was found in queue for newsite.com
+2025-11-02 02:07:04,961 ERROR scheduler Skipped queueing frappe.desk.utils.delete_old_exported_report_files because it was found in queue for newsite.com
+2025-11-02 02:07:05,108 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for newsite.com
+2025-11-02 02:07:05,121 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for newsite.com
+2025-11-02 02:07:05,131 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for newsite.com
+2025-11-02 02:07:05,154 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for newsite.com
+2025-11-02 02:07:05,175 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.project_status_update_reminder because it was found in queue for newsite.com
+2025-11-02 02:07:05,192 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for newsite.com
+2025-11-02 02:07:05,236 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-11-02 02:07:05,257 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for newsite.com
+2025-11-02 02:07:05,266 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-11-02 02:07:05,277 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.hourly_reminder because it was found in queue for newsite.com
+2025-11-02 02:07:05,282 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for newsite.com
+2025-11-02 02:07:05,310 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for newsite.com
+2025-11-02 02:07:05,363 ERROR scheduler Skipped queueing frappe.search.sqlite_search.build_index_if_not_exists because it was found in queue for newsite.com
+2025-11-02 02:07:05,387 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.collect_project_status because it was found in queue for newsite.com
+2025-11-02 02:07:05,396 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for newsite.com
+2025-11-02 02:07:05,432 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for newsite.com
+2025-11-02 02:08:05,841 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for newsite.com
+2025-11-02 02:08:05,870 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-11-02 02:08:06,001 ERROR scheduler Skipped queueing frappe.desk.utils.delete_old_exported_report_files because it was found in queue for newsite.com
+2025-11-02 02:08:06,006 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.project_status_update_reminder because it was found in queue for newsite.com
+2025-11-02 02:08:06,046 ERROR scheduler Skipped queueing frappe.search.sqlite_search.build_index_if_not_exists because it was found in queue for newsite.com
+2025-11-02 02:08:06,124 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for newsite.com
+2025-11-02 02:08:06,140 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.collect_project_status because it was found in queue for newsite.com
+2025-11-02 02:08:06,361 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for newsite.com
+2025-11-02 02:08:06,388 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for newsite.com
+2025-11-02 02:08:06,398 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for newsite.com
+2025-11-02 02:08:06,424 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for newsite.com
+2025-11-02 02:08:06,474 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for newsite.com
+2025-11-02 02:08:06,535 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for newsite.com
+2025-11-02 02:08:06,577 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for newsite.com
+2025-11-02 02:08:06,603 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for newsite.com
+2025-11-02 02:08:06,644 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for newsite.com
+2025-11-02 02:08:06,670 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for newsite.com
+2025-11-02 02:08:06,751 ERROR scheduler Skipped queueing erpnext.utilities.doctype.video.video.update_youtube_data because it was found in queue for newsite.com
+2025-11-02 02:08:06,770 ERROR scheduler Skipped queueing erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization because it was found in queue for newsite.com
+2025-11-02 02:08:06,790 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.hourly_reminder because it was found in queue for newsite.com
+2025-11-02 02:08:06,824 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for newsite.com
+2025-11-02 02:08:06,835 ERROR scheduler Skipped queueing frappe.email.doctype.newsletter.newsletter.send_scheduled_email because it was found in queue for newsite.com
+2025-11-02 02:08:06,843 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for newsite.com
+2025-11-02 02:08:06,879 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for newsite.com
+2025-11-02 02:08:06,922 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-11-02 02:08:06,944 ERROR scheduler Skipped queueing frappe.pulse.client.send_queued_events because it was found in queue for newsite.com
+2025-11-02 02:08:07,005 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-11-02 02:08:07,030 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-11-02 02:08:07,047 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for newsite.com
+2025-11-02 02:08:07,061 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for newsite.com
+2025-11-02 02:09:07,252 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.project_status_update_reminder because it was found in queue for newsite.com
+2025-11-02 02:09:07,261 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for newsite.com
+2025-11-02 02:09:07,270 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for newsite.com
+2025-11-02 02:09:07,286 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-11-02 02:09:07,313 ERROR scheduler Skipped queueing erpnext.utilities.doctype.video.video.update_youtube_data because it was found in queue for newsite.com
+2025-11-02 02:09:07,338 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for newsite.com
+2025-11-02 02:09:07,454 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-11-02 02:09:07,497 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.hourly_reminder because it was found in queue for newsite.com
+2025-11-02 02:09:07,511 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for newsite.com
+2025-11-02 02:09:07,525 ERROR scheduler Skipped queueing erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization because it was found in queue for newsite.com
+2025-11-02 02:09:07,532 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for newsite.com
+2025-11-02 02:09:07,537 ERROR scheduler Skipped queueing frappe.email.doctype.newsletter.newsletter.send_scheduled_email because it was found in queue for newsite.com
+2025-11-02 02:09:07,547 ERROR scheduler Skipped queueing frappe.search.sqlite_search.build_index_if_not_exists because it was found in queue for newsite.com
+2025-11-02 02:09:07,552 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for newsite.com
+2025-11-02 02:09:07,559 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for newsite.com
+2025-11-02 02:09:07,569 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for newsite.com
+2025-11-02 02:09:07,610 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for newsite.com
+2025-11-02 02:09:07,615 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for newsite.com
+2025-11-02 02:09:07,626 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for newsite.com
+2025-11-02 02:09:07,633 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for newsite.com
+2025-11-02 02:09:07,641 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for newsite.com
+2025-11-02 02:09:07,659 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.collect_project_status because it was found in queue for newsite.com
+2025-11-02 02:09:07,675 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for newsite.com
+2025-11-02 02:09:07,696 ERROR scheduler Skipped queueing frappe.desk.utils.delete_old_exported_report_files because it was found in queue for newsite.com
+2025-11-02 02:09:07,701 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for newsite.com
+2025-11-02 02:09:07,711 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-11-02 02:09:07,715 ERROR scheduler Skipped queueing frappe.pulse.client.send_queued_events because it was found in queue for newsite.com
+2025-11-02 02:09:07,721 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for newsite.com
+2025-11-02 02:09:07,745 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for newsite.com
+2025-11-02 02:09:07,754 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-11-02 02:10:09,185 ERROR scheduler Exception in Enqueue Events for Site newsite.com
 Traceback (most recent call last):
   File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1463, in get_connection
     if connection.can_read():
@@ -84,7 +180,102 @@ Traceback (most recent call last):
   File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 705, in connect
     raise ConnectionError(self._error_message(e))
 redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
-2025-10-28 00:08:38,088 ERROR scheduler Exception in Enqueue Events for Site newsite.com
+2025-11-02 02:12:36,134 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for newsite.com
+2025-11-02 02:12:36,436 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for newsite.com
+2025-11-02 02:12:36,776 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for newsite.com
+2025-11-02 02:12:36,903 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for newsite.com
+2025-11-02 02:12:37,062 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for newsite.com
+2025-11-02 02:12:37,138 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for newsite.com
+2025-11-02 02:12:37,261 ERROR scheduler Skipped queueing frappe.desk.utils.delete_old_exported_report_files because it was found in queue for newsite.com
+2025-11-02 13:43:57,717 ERROR scheduler Skipped queueing frappe.email.doctype.newsletter.newsletter.send_scheduled_email because it was found in queue for newsite.com
+2025-11-02 13:43:57,842 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for newsite.com
+2025-11-02 13:43:57,849 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for newsite.com
+2025-11-02 13:43:57,853 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for newsite.com
+2025-11-02 13:43:57,860 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for newsite.com
+2025-11-02 13:43:57,865 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.hourly_reminder because it was found in queue for newsite.com
+2025-11-02 13:43:57,869 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for newsite.com
+2025-11-02 13:43:57,874 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for newsite.com
+2025-11-02 13:43:57,898 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for newsite.com
+2025-11-02 13:43:57,968 ERROR scheduler Skipped queueing frappe.desk.utils.delete_old_exported_report_files because it was found in queue for newsite.com
+2025-11-02 13:43:57,980 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for newsite.com
+2025-11-02 13:43:57,993 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for newsite.com
+2025-11-02 13:43:58,360 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for newsite.com
+2025-11-02 13:43:58,415 ERROR scheduler Skipped queueing frappe.pulse.client.send_queued_events because it was found in queue for newsite.com
+2025-11-02 13:43:58,528 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-11-02 14:01:14,376 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for newsite.com
+2025-11-02 14:01:14,754 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for newsite.com
+2025-11-02 14:01:14,770 ERROR scheduler Skipped queueing frappe.pulse.client.send_queued_events because it was found in queue for newsite.com
+2025-11-02 14:01:14,779 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for newsite.com
+2025-11-02 14:01:14,828 ERROR scheduler Skipped queueing frappe.email.doctype.newsletter.newsletter.send_scheduled_email because it was found in queue for newsite.com
+2025-11-02 14:01:14,837 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for newsite.com
+2025-11-02 14:01:14,842 ERROR scheduler Skipped queueing erpnext.utilities.doctype.video.video.update_youtube_data because it was found in queue for newsite.com
+2025-11-02 14:01:14,848 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for newsite.com
+2025-11-02 14:01:14,856 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for newsite.com
+2025-11-02 14:01:14,866 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.collect_project_status because it was found in queue for newsite.com
+2025-11-02 14:01:14,871 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for newsite.com
+2025-11-02 14:01:14,882 ERROR scheduler Skipped queueing erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization because it was found in queue for newsite.com
+2025-11-02 14:01:14,894 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for newsite.com
+2025-11-02 14:01:14,906 ERROR scheduler Skipped queueing frappe.desk.utils.delete_old_exported_report_files because it was found in queue for newsite.com
+2025-11-02 14:01:14,912 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.hourly_reminder because it was found in queue for newsite.com
+2025-11-02 14:01:14,924 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for newsite.com
+2025-11-02 14:01:14,935 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for newsite.com
+2025-11-02 14:01:14,945 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for newsite.com
+2025-11-02 14:01:14,961 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for newsite.com
+2025-11-02 14:01:14,975 ERROR scheduler Skipped queueing frappe.search.sqlite_search.build_index_if_not_exists because it was found in queue for newsite.com
+2025-11-02 14:01:14,984 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for newsite.com
+2025-11-02 14:01:15,000 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for newsite.com
+2025-11-02 14:01:15,008 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-11-02 14:01:15,017 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for newsite.com
+2025-11-02 14:01:15,026 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-11-02 14:01:15,029 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-11-02 14:01:15,040 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for newsite.com
+2025-11-02 14:01:15,058 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for newsite.com
+2025-11-02 14:01:15,086 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.project_status_update_reminder because it was found in queue for newsite.com
+2025-11-02 14:01:15,101 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-11-02 14:02:15,358 ERROR scheduler Skipped queueing frappe.search.sqlite_search.build_index_if_not_exists because it was found in queue for newsite.com
+2025-11-02 14:02:15,404 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-11-02 14:02:15,422 ERROR scheduler Skipped queueing erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization because it was found in queue for newsite.com
+2025-11-02 14:02:15,429 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for newsite.com
+2025-11-02 14:02:15,439 ERROR scheduler Skipped queueing frappe.pulse.client.send_queued_events because it was found in queue for newsite.com
+2025-11-02 14:02:15,444 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-11-02 14:02:15,448 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for newsite.com
+2025-11-02 14:02:15,455 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for newsite.com
+2025-11-02 14:02:15,489 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for newsite.com
+2025-11-02 14:02:15,499 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for newsite.com
+2025-11-02 14:02:15,507 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for newsite.com
+2025-11-02 14:02:15,517 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.collect_project_status because it was found in queue for newsite.com
+2025-11-02 14:02:15,520 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for newsite.com
+2025-11-02 14:02:15,525 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.hourly_reminder because it was found in queue for newsite.com
+2025-11-02 14:02:15,535 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-11-02 14:02:15,547 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for newsite.com
+2025-11-02 14:02:15,560 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-11-02 14:02:15,566 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for newsite.com
+2025-11-02 14:02:15,597 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for newsite.com
+2025-11-02 14:02:15,621 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for newsite.com
+2025-11-02 14:02:15,636 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for newsite.com
+2025-11-02 14:02:15,639 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for newsite.com
+2025-11-02 14:02:15,666 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for newsite.com
+2025-11-02 14:02:15,719 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for newsite.com
+2025-11-02 14:02:15,766 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for newsite.com
+2025-11-02 14:02:15,849 ERROR scheduler Skipped queueing erpnext.utilities.doctype.video.video.update_youtube_data because it was found in queue for newsite.com
+2025-11-02 14:02:15,912 ERROR scheduler Skipped queueing frappe.email.doctype.newsletter.newsletter.send_scheduled_email because it was found in queue for newsite.com
+2025-11-02 14:02:15,934 ERROR scheduler Skipped queueing frappe.desk.utils.delete_old_exported_report_files because it was found in queue for newsite.com
+2025-11-02 14:02:15,941 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.project_status_update_reminder because it was found in queue for newsite.com
+2025-11-02 14:02:15,944 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for newsite.com
+2025-11-02 14:03:17,061 ERROR scheduler Exception in Enqueue Events for Site newsite.com
+Traceback (most recent call last):
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1463, in get_connection
+    if connection.can_read():
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 861, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 444, in can_read
+    return self.read_from_socket(timeout=timeout, raise_on_timeout=False)
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 455, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+
+During handling of the above exception, another exception occurred:
+
 Traceback (most recent call last):
   File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 699, in connect
     sock = self.retry.call_with_retry(
@@ -123,12 +314,111 @@ Traceback (most recent call last):
     return self.execute_command("HGETALL", name)
   File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1266, in execute_command
     conn = self.connection or pool.get_connection(command_name, **options)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1457, in get_connection
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1467, in get_connection
     connection.connect()
   File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 705, in connect
     raise ConnectionError(self._error_message(e))
 redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
-2025-10-28 00:09:38,693 ERROR scheduler Exception in Enqueue Events for Site newsite.com
+2025-11-02 14:09:36,857 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-11-02 14:09:37,138 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-11-02 14:09:37,173 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-11-02 14:09:37,226 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-11-02 14:10:37,586 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-11-02 14:10:37,594 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-11-02 14:10:37,621 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-11-02 14:10:37,700 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-11-02 14:11:38,182 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-11-02 14:11:38,331 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-11-02 14:11:38,356 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-11-02 14:11:38,408 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-11-02 14:11:38,412 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for newsite.com
+2025-11-02 15:49:36,115 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-11-02 15:49:36,591 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-11-02 15:49:36,601 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-11-02 15:49:36,628 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-11-02 15:50:37,373 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-11-03 13:40:37,888 ERROR scheduler Skipped queueing erpnext.crm.doctype.email_campaign.email_campaign.send_email_to_leads_or_contacts because it was found in queue for newsite.com
+2025-11-03 13:40:38,037 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for newsite.com
+2025-11-03 13:40:38,050 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for newsite.com
+2025-11-03 13:40:38,055 ERROR scheduler Skipped queueing erpnext.setup.doctype.email_digest.email_digest.send because it was found in queue for newsite.com
+2025-11-03 13:40:38,063 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for newsite.com
+2025-11-03 13:40:38,094 ERROR scheduler Skipped queueing erpnext.crm.utils.open_leads_opportunities_based_on_todays_event because it was found in queue for newsite.com
+2025-11-03 13:40:38,138 ERROR scheduler Skipped queueing frappe.email.doctype.auto_email_report.auto_email_report.send_daily because it was found in queue for newsite.com
+2025-11-03 13:40:38,143 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_daily_updates because it was found in queue for newsite.com
+2025-11-03 13:40:38,151 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_statement_of_accounts.process_statement_of_accounts.send_auto_email because it was found in queue for newsite.com
+2025-11-03 13:40:38,163 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for newsite.com
+2025-11-03 13:40:38,172 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily because it was found in queue for newsite.com
+2025-11-03 13:40:38,180 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.asset.update_maintenance_status because it was found in queue for newsite.com
+2025-11-03 13:40:38,188 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.auto_update_latest_price_in_all_boms because it was found in queue for newsite.com
+2025-11-03 13:40:38,196 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily because it was found in queue for newsite.com
+2025-11-03 13:40:38,371 ERROR scheduler Skipped queueing frappe.core.doctype.log_settings.log_settings.run_log_clean_up because it was found in queue for newsite.com
+2025-11-03 13:40:38,419 ERROR scheduler Skipped queueing frappe.search.sqlite_search.build_index_if_not_exists because it was found in queue for newsite.com
+2025-11-03 13:40:38,506 ERROR scheduler Skipped queueing erpnext.crm.doctype.opportunity.opportunity.auto_close_opportunity because it was found in queue for newsite.com
+2025-11-03 13:40:38,574 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_subscription.process_subscription.create_subscription_process because it was found in queue for newsite.com
+2025-11-03 13:40:38,617 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.depreciation.post_depreciation_entries because it was found in queue for newsite.com
+2025-11-03 13:40:38,632 ERROR scheduler Skipped queueing frappe.desk.utils.delete_old_exported_report_files because it was found in queue for newsite.com
+2025-11-03 13:40:38,666 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.collect_project_status because it was found in queue for newsite.com
+2025-11-03 13:40:38,714 ERROR scheduler Skipped queueing erpnext.crm.doctype.email_campaign.email_campaign.set_email_campaign_status because it was found in queue for newsite.com
+2025-11-03 13:40:38,755 ERROR scheduler Skipped queueing erpnext.buying.doctype.supplier_quotation.supplier_quotation.set_expired_status because it was found in queue for newsite.com
+2025-11-03 13:40:38,859 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for newsite.com
+2025-11-03 13:40:38,887 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for newsite.com
+2025-11-03 13:40:39,000 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.daily_backup because it was found in queue for newsite.com
+2025-11-03 13:40:39,030 ERROR scheduler Skipped queueing frappe.core.doctype.user_invitation.user_invitation.mark_expired_invitations because it was found in queue for newsite.com
+2025-11-03 13:40:39,062 ERROR scheduler Skipped queueing frappe.desk.notifications.clear_notifications because it was found in queue for newsite.com
+2025-11-03 13:40:39,121 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for newsite.com
+2025-11-03 13:40:39,139 ERROR scheduler Skipped queueing frappe.email.doctype.newsletter.newsletter.send_scheduled_email because it was found in queue for newsite.com
+2025-11-03 13:40:39,193 ERROR scheduler Skipped queueing erpnext.crm.doctype.contract.contract.update_status_for_contracts because it was found in queue for newsite.com
+2025-11-03 13:40:39,254 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for newsite.com
+2025-11-03 13:40:39,303 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_settings.energy_point_settings.allocate_review_points because it was found in queue for newsite.com
+2025-11-03 13:40:39,335 ERROR scheduler Skipped queueing erpnext.buying.doctype.supplier_scorecard.supplier_scorecard.refresh_scorecards because it was found in queue for newsite.com
+2025-11-03 13:40:39,402 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for newsite.com
+2025-11-03 13:40:39,554 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.remove_unverified_record because it was found in queue for newsite.com
+2025-11-03 13:40:39,624 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset_maintenance_log.asset_maintenance_log.update_asset_maintenance_log_status because it was found in queue for newsite.com
+2025-11-03 13:40:39,763 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for newsite.com
+2025-11-03 13:40:39,793 ERROR scheduler Skipped queueing frappe.automation.doctype.auto_repeat.auto_repeat.make_auto_repeat_entry because it was found in queue for newsite.com
+2025-11-03 13:40:39,867 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.asset.make_post_gl_entry because it was found in queue for newsite.com
+2025-11-03 13:40:39,977 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for newsite.com
+2025-11-03 13:40:40,061 ERROR scheduler Skipped queueing frappe.sessions.clear_expired_sessions because it was found in queue for newsite.com
+2025-11-03 13:40:40,235 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_contacts.google_contacts.sync because it was found in queue for newsite.com
+2025-11-03 13:40:40,343 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for newsite.com
+2025-11-03 13:41:41,422 ERROR scheduler Skipped queueing frappe.email.doctype.auto_email_report.auto_email_report.send_daily because it was found in queue for newsite.com
+2025-11-03 13:41:41,641 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for newsite.com
+2025-11-03 13:41:41,753 ERROR scheduler Skipped queueing frappe.core.doctype.log_settings.log_settings.run_log_clean_up because it was found in queue for newsite.com
+2025-11-03 13:41:41,855 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for newsite.com
+2025-11-03 13:41:41,955 ERROR scheduler Skipped queueing erpnext.setup.doctype.email_digest.email_digest.send because it was found in queue for newsite.com
+2025-11-03 13:41:42,043 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.auto_update_latest_price_in_all_boms because it was found in queue for newsite.com
+2025-11-03 13:41:42,079 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.remove_unverified_record because it was found in queue for newsite.com
+2025-11-03 13:41:42,240 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for newsite.com
+2025-11-03 13:41:42,333 ERROR scheduler Skipped queueing frappe.desk.notifications.clear_notifications because it was found in queue for newsite.com
+2025-11-03 13:41:42,372 ERROR scheduler Skipped queueing frappe.sessions.clear_expired_sessions because it was found in queue for newsite.com
+2025-11-03 13:41:42,489 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for newsite.com
+2025-11-03 13:41:42,558 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for newsite.com
+2025-11-03 13:41:42,636 ERROR scheduler Skipped queueing frappe.automation.doctype.auto_repeat.auto_repeat.make_auto_repeat_entry because it was found in queue for newsite.com
+2025-11-03 13:41:42,901 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily because it was found in queue for newsite.com
+2025-11-03 13:41:43,058 ERROR scheduler Skipped queueing frappe.core.doctype.user_invitation.user_invitation.mark_expired_invitations because it was found in queue for newsite.com
+2025-11-03 13:41:43,350 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_subscription.process_subscription.create_subscription_process because it was found in queue for newsite.com
+2025-11-03 13:41:43,371 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for newsite.com
+2025-11-03 13:41:43,376 ERROR scheduler Skipped queueing erpnext.crm.utils.open_leads_opportunities_based_on_todays_event because it was found in queue for newsite.com
+2025-11-03 13:41:43,395 ERROR scheduler Skipped queueing frappe.desk.utils.delete_old_exported_report_files because it was found in queue for newsite.com
+2025-11-03 13:41:43,410 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for newsite.com
+2025-11-03 13:41:43,503 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.depreciation.post_depreciation_entries because it was found in queue for newsite.com
+2025-11-03 13:41:43,829 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for newsite.com
+2025-11-03 13:41:43,873 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for newsite.com
+2025-11-03 13:41:43,966 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily because it was found in queue for newsite.com
+2025-11-03 13:44:47,256 ERROR scheduler Exception in Enqueue Events for Site newsite.com
+Traceback (most recent call last):
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1463, in get_connection
+    if connection.can_read():
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 861, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 444, in can_read
+    return self.read_from_socket(timeout=timeout, raise_on_timeout=False)
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 455, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+
+During handling of the above exception, another exception occurred:
+
 Traceback (most recent call last):
   File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 699, in connect
     sock = self.retry.call_with_retry(
@@ -167,12 +457,63 @@ Traceback (most recent call last):
     return self.execute_command("HGETALL", name)
   File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1266, in execute_command
     conn = self.connection or pool.get_connection(command_name, **options)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1457, in get_connection
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1467, in get_connection
     connection.connect()
   File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 705, in connect
     raise ConnectionError(self._error_message(e))
 redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
-2025-10-28 00:10:39,501 ERROR scheduler Exception in Enqueue Events for Site newsite.com
+2025-11-03 14:01:37,742 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-11-03 14:01:37,866 ERROR scheduler Skipped queueing erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization because it was found in queue for newsite.com
+2025-11-03 14:01:37,894 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for newsite.com
+2025-11-03 14:01:37,968 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for newsite.com
+2025-11-03 14:01:37,983 ERROR scheduler Skipped queueing frappe.desk.utils.delete_old_exported_report_files because it was found in queue for newsite.com
+2025-11-03 14:01:38,087 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.collect_project_status because it was found in queue for newsite.com
+2025-11-03 14:01:38,118 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.project_status_update_reminder because it was found in queue for newsite.com
+2025-11-03 14:01:38,122 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for newsite.com
+2025-11-03 14:01:38,126 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for newsite.com
+2025-11-03 14:01:38,134 ERROR scheduler Skipped queueing erpnext.utilities.doctype.video.video.update_youtube_data because it was found in queue for newsite.com
+2025-11-03 14:01:38,167 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for newsite.com
+2025-11-03 14:01:38,176 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-11-03 14:01:38,218 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for newsite.com
+2025-11-03 14:01:38,284 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for newsite.com
+2025-11-03 14:01:38,321 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for newsite.com
+2025-11-03 14:01:38,356 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.hourly_reminder because it was found in queue for newsite.com
+2025-11-03 14:01:38,386 ERROR scheduler Skipped queueing frappe.email.doctype.newsletter.newsletter.send_scheduled_email because it was found in queue for newsite.com
+2025-11-03 14:01:38,409 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for newsite.com
+2025-11-03 14:01:38,498 ERROR scheduler Skipped queueing frappe.pulse.client.send_queued_events because it was found in queue for newsite.com
+2025-11-03 14:01:38,528 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-11-03 14:01:38,743 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for newsite.com
+2025-11-03 14:01:38,775 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for newsite.com
+2025-11-03 14:01:38,781 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for newsite.com
+2025-11-03 14:01:38,785 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for newsite.com
+2025-11-03 14:01:38,791 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for newsite.com
+2025-11-03 14:01:38,797 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for newsite.com
+2025-11-03 14:01:38,801 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for newsite.com
+2025-11-03 14:01:38,813 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-11-03 14:33:48,578 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-11-03 14:33:49,046 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-11-03 14:33:49,124 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-11-03 14:33:49,193 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-11-03 14:34:49,596 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-11-03 14:34:49,601 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-11-03 14:34:49,696 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-11-03 14:34:49,705 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-11-03 14:35:49,855 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-11-03 14:35:50,072 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-11-03 14:53:00,311 ERROR scheduler Exception in Enqueue Events for Site newsite.com
+Traceback (most recent call last):
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1463, in get_connection
+    if connection.can_read():
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 861, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 444, in can_read
+    return self.read_from_socket(timeout=timeout, raise_on_timeout=False)
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 455, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+
+During handling of the above exception, another exception occurred:
+
 Traceback (most recent call last):
   File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 699, in connect
     sock = self.retry.call_with_retry(
@@ -211,1152 +552,197 @@ Traceback (most recent call last):
     return self.execute_command("HGETALL", name)
   File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1266, in execute_command
     conn = self.connection or pool.get_connection(command_name, **options)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1457, in get_connection
+  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1467, in get_connection
     connection.connect()
   File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 705, in connect
     raise ConnectionError(self._error_message(e))
 redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
-2025-10-28 00:11:40,117 ERROR scheduler Exception in Enqueue Events for Site newsite.com
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 699, in connect
-    sock = self.retry.call_with_retry(
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/retry.py", line 46, in call_with_retry
-    return do()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 700, in <lambda>
-    lambda: self._connect(), lambda error: self.disconnect(error)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1002, in _connect
-    raise err
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 990, in _connect
-    sock.connect(socket_address)
-ConnectionRefusedError: [Errno 111] Connection refused
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 102, in enqueue_events_for_site
-    enqueue_events(site=site)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 122, in enqueue_events
-    if job_type.enqueue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
-    if not self.is_job_in_queue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 95, in is_job_in_queue
-    return is_job_enqueued(self.rq_job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 568, in is_job_enqueued
-    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 573, in get_job_status
-    job = get_job(job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 580, in get_job
-    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 591, in fetch
-    job.refresh()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 989, in refresh
-    data = self.connection.hgetall(self.key)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/commands/core.py", line 4887, in hgetall
-    return self.execute_command("HGETALL", name)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1266, in execute_command
-    conn = self.connection or pool.get_connection(command_name, **options)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1457, in get_connection
-    connection.connect()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 705, in connect
-    raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
-2025-10-28 00:12:40,792 ERROR scheduler Exception in Enqueue Events for Site newsite.com
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 699, in connect
-    sock = self.retry.call_with_retry(
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/retry.py", line 46, in call_with_retry
-    return do()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 700, in <lambda>
-    lambda: self._connect(), lambda error: self.disconnect(error)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1002, in _connect
-    raise err
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 990, in _connect
-    sock.connect(socket_address)
-ConnectionRefusedError: [Errno 111] Connection refused
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 102, in enqueue_events_for_site
-    enqueue_events(site=site)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 122, in enqueue_events
-    if job_type.enqueue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
-    if not self.is_job_in_queue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 95, in is_job_in_queue
-    return is_job_enqueued(self.rq_job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 568, in is_job_enqueued
-    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 573, in get_job_status
-    job = get_job(job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 580, in get_job
-    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 591, in fetch
-    job.refresh()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 989, in refresh
-    data = self.connection.hgetall(self.key)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/commands/core.py", line 4887, in hgetall
-    return self.execute_command("HGETALL", name)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1266, in execute_command
-    conn = self.connection or pool.get_connection(command_name, **options)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1457, in get_connection
-    connection.connect()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 705, in connect
-    raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
-2025-10-28 00:13:41,293 ERROR scheduler Exception in Enqueue Events for Site newsite.com
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 699, in connect
-    sock = self.retry.call_with_retry(
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/retry.py", line 46, in call_with_retry
-    return do()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 700, in <lambda>
-    lambda: self._connect(), lambda error: self.disconnect(error)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1002, in _connect
-    raise err
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 990, in _connect
-    sock.connect(socket_address)
-ConnectionRefusedError: [Errno 111] Connection refused
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 102, in enqueue_events_for_site
-    enqueue_events(site=site)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 122, in enqueue_events
-    if job_type.enqueue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
-    if not self.is_job_in_queue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 95, in is_job_in_queue
-    return is_job_enqueued(self.rq_job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 568, in is_job_enqueued
-    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 573, in get_job_status
-    job = get_job(job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 580, in get_job
-    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 591, in fetch
-    job.refresh()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 989, in refresh
-    data = self.connection.hgetall(self.key)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/commands/core.py", line 4887, in hgetall
-    return self.execute_command("HGETALL", name)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1266, in execute_command
-    conn = self.connection or pool.get_connection(command_name, **options)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1457, in get_connection
-    connection.connect()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 705, in connect
-    raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
-2025-10-28 00:14:41,802 ERROR scheduler Exception in Enqueue Events for Site newsite.com
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 699, in connect
-    sock = self.retry.call_with_retry(
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/retry.py", line 46, in call_with_retry
-    return do()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 700, in <lambda>
-    lambda: self._connect(), lambda error: self.disconnect(error)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1002, in _connect
-    raise err
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 990, in _connect
-    sock.connect(socket_address)
-ConnectionRefusedError: [Errno 111] Connection refused
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 102, in enqueue_events_for_site
-    enqueue_events(site=site)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 122, in enqueue_events
-    if job_type.enqueue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
-    if not self.is_job_in_queue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 95, in is_job_in_queue
-    return is_job_enqueued(self.rq_job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 568, in is_job_enqueued
-    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 573, in get_job_status
-    job = get_job(job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 580, in get_job
-    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 591, in fetch
-    job.refresh()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 989, in refresh
-    data = self.connection.hgetall(self.key)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/commands/core.py", line 4887, in hgetall
-    return self.execute_command("HGETALL", name)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1266, in execute_command
-    conn = self.connection or pool.get_connection(command_name, **options)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1457, in get_connection
-    connection.connect()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 705, in connect
-    raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
-2025-10-28 00:15:42,428 ERROR scheduler Exception in Enqueue Events for Site newsite.com
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 699, in connect
-    sock = self.retry.call_with_retry(
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/retry.py", line 46, in call_with_retry
-    return do()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 700, in <lambda>
-    lambda: self._connect(), lambda error: self.disconnect(error)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1002, in _connect
-    raise err
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 990, in _connect
-    sock.connect(socket_address)
-ConnectionRefusedError: [Errno 111] Connection refused
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 102, in enqueue_events_for_site
-    enqueue_events(site=site)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 122, in enqueue_events
-    if job_type.enqueue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
-    if not self.is_job_in_queue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 95, in is_job_in_queue
-    return is_job_enqueued(self.rq_job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 568, in is_job_enqueued
-    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 573, in get_job_status
-    job = get_job(job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 580, in get_job
-    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 591, in fetch
-    job.refresh()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 989, in refresh
-    data = self.connection.hgetall(self.key)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/commands/core.py", line 4887, in hgetall
-    return self.execute_command("HGETALL", name)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1266, in execute_command
-    conn = self.connection or pool.get_connection(command_name, **options)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1457, in get_connection
-    connection.connect()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 705, in connect
-    raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
-2025-10-28 00:16:42,932 ERROR scheduler Exception in Enqueue Events for Site newsite.com
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 699, in connect
-    sock = self.retry.call_with_retry(
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/retry.py", line 46, in call_with_retry
-    return do()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 700, in <lambda>
-    lambda: self._connect(), lambda error: self.disconnect(error)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1002, in _connect
-    raise err
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 990, in _connect
-    sock.connect(socket_address)
-ConnectionRefusedError: [Errno 111] Connection refused
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 102, in enqueue_events_for_site
-    enqueue_events(site=site)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 122, in enqueue_events
-    if job_type.enqueue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
-    if not self.is_job_in_queue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 95, in is_job_in_queue
-    return is_job_enqueued(self.rq_job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 568, in is_job_enqueued
-    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 573, in get_job_status
-    job = get_job(job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 580, in get_job
-    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 591, in fetch
-    job.refresh()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 989, in refresh
-    data = self.connection.hgetall(self.key)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/commands/core.py", line 4887, in hgetall
-    return self.execute_command("HGETALL", name)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1266, in execute_command
-    conn = self.connection or pool.get_connection(command_name, **options)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1457, in get_connection
-    connection.connect()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 705, in connect
-    raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
-2025-10-28 00:17:43,478 ERROR scheduler Exception in Enqueue Events for Site newsite.com
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 699, in connect
-    sock = self.retry.call_with_retry(
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/retry.py", line 46, in call_with_retry
-    return do()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 700, in <lambda>
-    lambda: self._connect(), lambda error: self.disconnect(error)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1002, in _connect
-    raise err
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 990, in _connect
-    sock.connect(socket_address)
-ConnectionRefusedError: [Errno 111] Connection refused
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 102, in enqueue_events_for_site
-    enqueue_events(site=site)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 122, in enqueue_events
-    if job_type.enqueue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
-    if not self.is_job_in_queue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 95, in is_job_in_queue
-    return is_job_enqueued(self.rq_job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 568, in is_job_enqueued
-    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 573, in get_job_status
-    job = get_job(job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 580, in get_job
-    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 591, in fetch
-    job.refresh()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 989, in refresh
-    data = self.connection.hgetall(self.key)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/commands/core.py", line 4887, in hgetall
-    return self.execute_command("HGETALL", name)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1266, in execute_command
-    conn = self.connection or pool.get_connection(command_name, **options)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1457, in get_connection
-    connection.connect()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 705, in connect
-    raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
-2025-10-28 00:18:43,955 ERROR scheduler Exception in Enqueue Events for Site newsite.com
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 699, in connect
-    sock = self.retry.call_with_retry(
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/retry.py", line 46, in call_with_retry
-    return do()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 700, in <lambda>
-    lambda: self._connect(), lambda error: self.disconnect(error)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1002, in _connect
-    raise err
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 990, in _connect
-    sock.connect(socket_address)
-ConnectionRefusedError: [Errno 111] Connection refused
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 102, in enqueue_events_for_site
-    enqueue_events(site=site)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 122, in enqueue_events
-    if job_type.enqueue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
-    if not self.is_job_in_queue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 95, in is_job_in_queue
-    return is_job_enqueued(self.rq_job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 568, in is_job_enqueued
-    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 573, in get_job_status
-    job = get_job(job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 580, in get_job
-    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 591, in fetch
-    job.refresh()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 989, in refresh
-    data = self.connection.hgetall(self.key)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/commands/core.py", line 4887, in hgetall
-    return self.execute_command("HGETALL", name)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1266, in execute_command
-    conn = self.connection or pool.get_connection(command_name, **options)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1457, in get_connection
-    connection.connect()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 705, in connect
-    raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
-2025-10-28 00:19:46,366 ERROR scheduler Exception in Enqueue Events for Site newsite.com
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 699, in connect
-    sock = self.retry.call_with_retry(
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/retry.py", line 46, in call_with_retry
-    return do()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 700, in <lambda>
-    lambda: self._connect(), lambda error: self.disconnect(error)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1002, in _connect
-    raise err
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 990, in _connect
-    sock.connect(socket_address)
-ConnectionRefusedError: [Errno 111] Connection refused
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 102, in enqueue_events_for_site
-    enqueue_events(site=site)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 122, in enqueue_events
-    if job_type.enqueue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
-    if not self.is_job_in_queue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 95, in is_job_in_queue
-    return is_job_enqueued(self.rq_job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 568, in is_job_enqueued
-    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 573, in get_job_status
-    job = get_job(job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 580, in get_job
-    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 591, in fetch
-    job.refresh()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 989, in refresh
-    data = self.connection.hgetall(self.key)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/commands/core.py", line 4887, in hgetall
-    return self.execute_command("HGETALL", name)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1266, in execute_command
-    conn = self.connection or pool.get_connection(command_name, **options)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1457, in get_connection
-    connection.connect()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 705, in connect
-    raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
-2025-10-28 00:20:46,898 ERROR scheduler Exception in Enqueue Events for Site newsite.com
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 699, in connect
-    sock = self.retry.call_with_retry(
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/retry.py", line 46, in call_with_retry
-    return do()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 700, in <lambda>
-    lambda: self._connect(), lambda error: self.disconnect(error)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1002, in _connect
-    raise err
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 990, in _connect
-    sock.connect(socket_address)
-ConnectionRefusedError: [Errno 111] Connection refused
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 102, in enqueue_events_for_site
-    enqueue_events(site=site)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 122, in enqueue_events
-    if job_type.enqueue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
-    if not self.is_job_in_queue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 95, in is_job_in_queue
-    return is_job_enqueued(self.rq_job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 568, in is_job_enqueued
-    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 573, in get_job_status
-    job = get_job(job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 580, in get_job
-    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 591, in fetch
-    job.refresh()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 989, in refresh
-    data = self.connection.hgetall(self.key)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/commands/core.py", line 4887, in hgetall
-    return self.execute_command("HGETALL", name)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1266, in execute_command
-    conn = self.connection or pool.get_connection(command_name, **options)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1457, in get_connection
-    connection.connect()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 705, in connect
-    raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
-2025-10-28 00:21:47,362 ERROR scheduler Exception in Enqueue Events for Site newsite.com
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 699, in connect
-    sock = self.retry.call_with_retry(
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/retry.py", line 46, in call_with_retry
-    return do()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 700, in <lambda>
-    lambda: self._connect(), lambda error: self.disconnect(error)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1002, in _connect
-    raise err
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 990, in _connect
-    sock.connect(socket_address)
-ConnectionRefusedError: [Errno 111] Connection refused
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 102, in enqueue_events_for_site
-    enqueue_events(site=site)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 122, in enqueue_events
-    if job_type.enqueue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
-    if not self.is_job_in_queue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 95, in is_job_in_queue
-    return is_job_enqueued(self.rq_job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 568, in is_job_enqueued
-    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 573, in get_job_status
-    job = get_job(job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 580, in get_job
-    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 591, in fetch
-    job.refresh()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 989, in refresh
-    data = self.connection.hgetall(self.key)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/commands/core.py", line 4887, in hgetall
-    return self.execute_command("HGETALL", name)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1266, in execute_command
-    conn = self.connection or pool.get_connection(command_name, **options)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1457, in get_connection
-    connection.connect()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 705, in connect
-    raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
-2025-10-28 00:22:47,905 ERROR scheduler Exception in Enqueue Events for Site newsite.com
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 699, in connect
-    sock = self.retry.call_with_retry(
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/retry.py", line 46, in call_with_retry
-    return do()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 700, in <lambda>
-    lambda: self._connect(), lambda error: self.disconnect(error)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1002, in _connect
-    raise err
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 990, in _connect
-    sock.connect(socket_address)
-ConnectionRefusedError: [Errno 111] Connection refused
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 102, in enqueue_events_for_site
-    enqueue_events(site=site)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 122, in enqueue_events
-    if job_type.enqueue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
-    if not self.is_job_in_queue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 95, in is_job_in_queue
-    return is_job_enqueued(self.rq_job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 568, in is_job_enqueued
-    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 573, in get_job_status
-    job = get_job(job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 580, in get_job
-    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 591, in fetch
-    job.refresh()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 989, in refresh
-    data = self.connection.hgetall(self.key)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/commands/core.py", line 4887, in hgetall
-    return self.execute_command("HGETALL", name)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1266, in execute_command
-    conn = self.connection or pool.get_connection(command_name, **options)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1457, in get_connection
-    connection.connect()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 705, in connect
-    raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
-2025-10-28 00:23:50,089 ERROR scheduler Exception in Enqueue Events for Site newsite.com
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 699, in connect
-    sock = self.retry.call_with_retry(
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/retry.py", line 46, in call_with_retry
-    return do()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 700, in <lambda>
-    lambda: self._connect(), lambda error: self.disconnect(error)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1002, in _connect
-    raise err
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 990, in _connect
-    sock.connect(socket_address)
-ConnectionRefusedError: [Errno 111] Connection refused
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 102, in enqueue_events_for_site
-    enqueue_events(site=site)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 122, in enqueue_events
-    if job_type.enqueue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
-    if not self.is_job_in_queue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 95, in is_job_in_queue
-    return is_job_enqueued(self.rq_job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 568, in is_job_enqueued
-    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 573, in get_job_status
-    job = get_job(job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 580, in get_job
-    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 591, in fetch
-    job.refresh()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 989, in refresh
-    data = self.connection.hgetall(self.key)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/commands/core.py", line 4887, in hgetall
-    return self.execute_command("HGETALL", name)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1266, in execute_command
-    conn = self.connection or pool.get_connection(command_name, **options)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1457, in get_connection
-    connection.connect()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 705, in connect
-    raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
-2025-10-28 00:24:50,646 ERROR scheduler Exception in Enqueue Events for Site newsite.com
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 699, in connect
-    sock = self.retry.call_with_retry(
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/retry.py", line 46, in call_with_retry
-    return do()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 700, in <lambda>
-    lambda: self._connect(), lambda error: self.disconnect(error)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1002, in _connect
-    raise err
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 990, in _connect
-    sock.connect(socket_address)
-ConnectionRefusedError: [Errno 111] Connection refused
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 102, in enqueue_events_for_site
-    enqueue_events(site=site)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 122, in enqueue_events
-    if job_type.enqueue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
-    if not self.is_job_in_queue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 95, in is_job_in_queue
-    return is_job_enqueued(self.rq_job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 568, in is_job_enqueued
-    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 573, in get_job_status
-    job = get_job(job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 580, in get_job
-    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 591, in fetch
-    job.refresh()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 989, in refresh
-    data = self.connection.hgetall(self.key)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/commands/core.py", line 4887, in hgetall
-    return self.execute_command("HGETALL", name)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1266, in execute_command
-    conn = self.connection or pool.get_connection(command_name, **options)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1457, in get_connection
-    connection.connect()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 705, in connect
-    raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
-2025-10-28 00:25:51,852 ERROR scheduler Exception in Enqueue Events for Site newsite.com
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 699, in connect
-    sock = self.retry.call_with_retry(
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/retry.py", line 46, in call_with_retry
-    return do()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 700, in <lambda>
-    lambda: self._connect(), lambda error: self.disconnect(error)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1002, in _connect
-    raise err
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 990, in _connect
-    sock.connect(socket_address)
-ConnectionRefusedError: [Errno 111] Connection refused
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 102, in enqueue_events_for_site
-    enqueue_events(site=site)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 122, in enqueue_events
-    if job_type.enqueue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
-    if not self.is_job_in_queue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 95, in is_job_in_queue
-    return is_job_enqueued(self.rq_job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 568, in is_job_enqueued
-    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 573, in get_job_status
-    job = get_job(job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 580, in get_job
-    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 591, in fetch
-    job.refresh()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 989, in refresh
-    data = self.connection.hgetall(self.key)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/commands/core.py", line 4887, in hgetall
-    return self.execute_command("HGETALL", name)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1266, in execute_command
-    conn = self.connection or pool.get_connection(command_name, **options)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1457, in get_connection
-    connection.connect()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 705, in connect
-    raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
-2025-10-28 00:26:52,516 ERROR scheduler Exception in Enqueue Events for Site newsite.com
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 699, in connect
-    sock = self.retry.call_with_retry(
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/retry.py", line 46, in call_with_retry
-    return do()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 700, in <lambda>
-    lambda: self._connect(), lambda error: self.disconnect(error)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1002, in _connect
-    raise err
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 990, in _connect
-    sock.connect(socket_address)
-ConnectionRefusedError: [Errno 111] Connection refused
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 102, in enqueue_events_for_site
-    enqueue_events(site=site)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 122, in enqueue_events
-    if job_type.enqueue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
-    if not self.is_job_in_queue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 95, in is_job_in_queue
-    return is_job_enqueued(self.rq_job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 568, in is_job_enqueued
-    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 573, in get_job_status
-    job = get_job(job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 580, in get_job
-    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 591, in fetch
-    job.refresh()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 989, in refresh
-    data = self.connection.hgetall(self.key)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/commands/core.py", line 4887, in hgetall
-    return self.execute_command("HGETALL", name)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1266, in execute_command
-    conn = self.connection or pool.get_connection(command_name, **options)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1457, in get_connection
-    connection.connect()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 705, in connect
-    raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
-2025-10-28 00:27:53,467 ERROR scheduler Exception in Enqueue Events for Site newsite.com
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 699, in connect
-    sock = self.retry.call_with_retry(
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/retry.py", line 46, in call_with_retry
-    return do()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 700, in <lambda>
-    lambda: self._connect(), lambda error: self.disconnect(error)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1002, in _connect
-    raise err
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 990, in _connect
-    sock.connect(socket_address)
-ConnectionRefusedError: [Errno 111] Connection refused
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 102, in enqueue_events_for_site
-    enqueue_events(site=site)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 122, in enqueue_events
-    if job_type.enqueue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
-    if not self.is_job_in_queue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 95, in is_job_in_queue
-    return is_job_enqueued(self.rq_job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 568, in is_job_enqueued
-    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 573, in get_job_status
-    job = get_job(job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 580, in get_job
-    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 591, in fetch
-    job.refresh()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 989, in refresh
-    data = self.connection.hgetall(self.key)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/commands/core.py", line 4887, in hgetall
-    return self.execute_command("HGETALL", name)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1266, in execute_command
-    conn = self.connection or pool.get_connection(command_name, **options)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1457, in get_connection
-    connection.connect()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 705, in connect
-    raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
-2025-10-28 00:28:53,975 ERROR scheduler Exception in Enqueue Events for Site newsite.com
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 699, in connect
-    sock = self.retry.call_with_retry(
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/retry.py", line 46, in call_with_retry
-    return do()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 700, in <lambda>
-    lambda: self._connect(), lambda error: self.disconnect(error)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1002, in _connect
-    raise err
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 990, in _connect
-    sock.connect(socket_address)
-ConnectionRefusedError: [Errno 111] Connection refused
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 102, in enqueue_events_for_site
-    enqueue_events(site=site)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 122, in enqueue_events
-    if job_type.enqueue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
-    if not self.is_job_in_queue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 95, in is_job_in_queue
-    return is_job_enqueued(self.rq_job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 568, in is_job_enqueued
-    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 573, in get_job_status
-    job = get_job(job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 580, in get_job
-    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 591, in fetch
-    job.refresh()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 989, in refresh
-    data = self.connection.hgetall(self.key)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/commands/core.py", line 4887, in hgetall
-    return self.execute_command("HGETALL", name)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1266, in execute_command
-    conn = self.connection or pool.get_connection(command_name, **options)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1457, in get_connection
-    connection.connect()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 705, in connect
-    raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
-2025-10-28 00:30:03,725 ERROR scheduler Exception in Enqueue Events for Site newsite.com
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 699, in connect
-    sock = self.retry.call_with_retry(
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/retry.py", line 46, in call_with_retry
-    return do()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 700, in <lambda>
-    lambda: self._connect(), lambda error: self.disconnect(error)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1002, in _connect
-    raise err
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 990, in _connect
-    sock.connect(socket_address)
-ConnectionRefusedError: [Errno 111] Connection refused
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 102, in enqueue_events_for_site
-    enqueue_events(site=site)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 122, in enqueue_events
-    if job_type.enqueue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
-    if not self.is_job_in_queue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 95, in is_job_in_queue
-    return is_job_enqueued(self.rq_job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 568, in is_job_enqueued
-    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 573, in get_job_status
-    job = get_job(job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 580, in get_job
-    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 591, in fetch
-    job.refresh()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 989, in refresh
-    data = self.connection.hgetall(self.key)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/commands/core.py", line 4887, in hgetall
-    return self.execute_command("HGETALL", name)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1266, in execute_command
-    conn = self.connection or pool.get_connection(command_name, **options)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1457, in get_connection
-    connection.connect()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 705, in connect
-    raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
-2025-10-28 00:31:04,176 ERROR scheduler Exception in Enqueue Events for Site newsite.com
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 699, in connect
-    sock = self.retry.call_with_retry(
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/retry.py", line 46, in call_with_retry
-    return do()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 700, in <lambda>
-    lambda: self._connect(), lambda error: self.disconnect(error)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1002, in _connect
-    raise err
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 990, in _connect
-    sock.connect(socket_address)
-ConnectionRefusedError: [Errno 111] Connection refused
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 102, in enqueue_events_for_site
-    enqueue_events(site=site)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 122, in enqueue_events
-    if job_type.enqueue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
-    if not self.is_job_in_queue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 95, in is_job_in_queue
-    return is_job_enqueued(self.rq_job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 568, in is_job_enqueued
-    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 573, in get_job_status
-    job = get_job(job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 580, in get_job
-    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 591, in fetch
-    job.refresh()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 989, in refresh
-    data = self.connection.hgetall(self.key)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/commands/core.py", line 4887, in hgetall
-    return self.execute_command("HGETALL", name)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1266, in execute_command
-    conn = self.connection or pool.get_connection(command_name, **options)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1457, in get_connection
-    connection.connect()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 705, in connect
-    raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
-2025-10-28 00:32:06,403 ERROR scheduler Exception in Enqueue Events for Site newsite.com
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 699, in connect
-    sock = self.retry.call_with_retry(
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/retry.py", line 46, in call_with_retry
-    return do()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 700, in <lambda>
-    lambda: self._connect(), lambda error: self.disconnect(error)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1002, in _connect
-    raise err
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 990, in _connect
-    sock.connect(socket_address)
-ConnectionRefusedError: [Errno 111] Connection refused
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 102, in enqueue_events_for_site
-    enqueue_events(site=site)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 122, in enqueue_events
-    if job_type.enqueue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
-    if not self.is_job_in_queue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 95, in is_job_in_queue
-    return is_job_enqueued(self.rq_job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 568, in is_job_enqueued
-    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 573, in get_job_status
-    job = get_job(job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 580, in get_job
-    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 591, in fetch
-    job.refresh()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 989, in refresh
-    data = self.connection.hgetall(self.key)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/commands/core.py", line 4887, in hgetall
-    return self.execute_command("HGETALL", name)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1266, in execute_command
-    conn = self.connection or pool.get_connection(command_name, **options)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1457, in get_connection
-    connection.connect()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 705, in connect
-    raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
-2025-10-28 00:33:06,937 ERROR scheduler Exception in Enqueue Events for Site newsite.com
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 699, in connect
-    sock = self.retry.call_with_retry(
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/retry.py", line 46, in call_with_retry
-    return do()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 700, in <lambda>
-    lambda: self._connect(), lambda error: self.disconnect(error)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1002, in _connect
-    raise err
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 990, in _connect
-    sock.connect(socket_address)
-ConnectionRefusedError: [Errno 111] Connection refused
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 102, in enqueue_events_for_site
-    enqueue_events(site=site)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 122, in enqueue_events
-    if job_type.enqueue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
-    if not self.is_job_in_queue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 95, in is_job_in_queue
-    return is_job_enqueued(self.rq_job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 568, in is_job_enqueued
-    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 573, in get_job_status
-    job = get_job(job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 580, in get_job
-    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 591, in fetch
-    job.refresh()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 989, in refresh
-    data = self.connection.hgetall(self.key)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/commands/core.py", line 4887, in hgetall
-    return self.execute_command("HGETALL", name)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1266, in execute_command
-    conn = self.connection or pool.get_connection(command_name, **options)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1457, in get_connection
-    connection.connect()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 705, in connect
-    raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
-2025-10-28 00:34:07,522 ERROR scheduler Exception in Enqueue Events for Site newsite.com
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 699, in connect
-    sock = self.retry.call_with_retry(
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/retry.py", line 46, in call_with_retry
-    return do()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 700, in <lambda>
-    lambda: self._connect(), lambda error: self.disconnect(error)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1002, in _connect
-    raise err
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 990, in _connect
-    sock.connect(socket_address)
-ConnectionRefusedError: [Errno 111] Connection refused
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 102, in enqueue_events_for_site
-    enqueue_events(site=site)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 122, in enqueue_events
-    if job_type.enqueue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
-    if not self.is_job_in_queue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 95, in is_job_in_queue
-    return is_job_enqueued(self.rq_job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 568, in is_job_enqueued
-    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 573, in get_job_status
-    job = get_job(job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 580, in get_job
-    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 591, in fetch
-    job.refresh()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 989, in refresh
-    data = self.connection.hgetall(self.key)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/commands/core.py", line 4887, in hgetall
-    return self.execute_command("HGETALL", name)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1266, in execute_command
-    conn = self.connection or pool.get_connection(command_name, **options)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1457, in get_connection
-    connection.connect()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 705, in connect
-    raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
-2025-10-28 00:35:08,081 ERROR scheduler Exception in Enqueue Events for Site newsite.com
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 699, in connect
-    sock = self.retry.call_with_retry(
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/retry.py", line 46, in call_with_retry
-    return do()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 700, in <lambda>
-    lambda: self._connect(), lambda error: self.disconnect(error)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1002, in _connect
-    raise err
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 990, in _connect
-    sock.connect(socket_address)
-ConnectionRefusedError: [Errno 111] Connection refused
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 102, in enqueue_events_for_site
-    enqueue_events(site=site)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 122, in enqueue_events
-    if job_type.enqueue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
-    if not self.is_job_in_queue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 95, in is_job_in_queue
-    return is_job_enqueued(self.rq_job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 568, in is_job_enqueued
-    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 573, in get_job_status
-    job = get_job(job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 580, in get_job
-    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 591, in fetch
-    job.refresh()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 989, in refresh
-    data = self.connection.hgetall(self.key)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/commands/core.py", line 4887, in hgetall
-    return self.execute_command("HGETALL", name)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1266, in execute_command
-    conn = self.connection or pool.get_connection(command_name, **options)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1457, in get_connection
-    connection.connect()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 705, in connect
-    raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
-2025-10-28 00:36:10,456 ERROR scheduler Exception in Enqueue Events for Site newsite.com
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 699, in connect
-    sock = self.retry.call_with_retry(
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/retry.py", line 46, in call_with_retry
-    return do()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 700, in <lambda>
-    lambda: self._connect(), lambda error: self.disconnect(error)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1002, in _connect
-    raise err
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 990, in _connect
-    sock.connect(socket_address)
-ConnectionRefusedError: [Errno 111] Connection refused
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 102, in enqueue_events_for_site
-    enqueue_events(site=site)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 122, in enqueue_events
-    if job_type.enqueue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
-    if not self.is_job_in_queue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 95, in is_job_in_queue
-    return is_job_enqueued(self.rq_job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 568, in is_job_enqueued
-    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 573, in get_job_status
-    job = get_job(job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 580, in get_job
-    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 591, in fetch
-    job.refresh()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 989, in refresh
-    data = self.connection.hgetall(self.key)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/commands/core.py", line 4887, in hgetall
-    return self.execute_command("HGETALL", name)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1266, in execute_command
-    conn = self.connection or pool.get_connection(command_name, **options)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1457, in get_connection
-    connection.connect()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 705, in connect
-    raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
-2025-10-28 00:37:10,841 ERROR scheduler Exception in Enqueue Events for Site newsite.com
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 699, in connect
-    sock = self.retry.call_with_retry(
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/retry.py", line 46, in call_with_retry
-    return do()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 700, in <lambda>
-    lambda: self._connect(), lambda error: self.disconnect(error)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1002, in _connect
-    raise err
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 990, in _connect
-    sock.connect(socket_address)
-ConnectionRefusedError: [Errno 111] Connection refused
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 102, in enqueue_events_for_site
-    enqueue_events(site=site)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 122, in enqueue_events
-    if job_type.enqueue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
-    if not self.is_job_in_queue():
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 95, in is_job_in_queue
-    return is_job_enqueued(self.rq_job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 568, in is_job_enqueued
-    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 573, in get_job_status
-    job = get_job(job_id)
-  File "/home/abhishek/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 580, in get_job
-    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 591, in fetch
-    job.refresh()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/rq/job.py", line 989, in refresh
-    data = self.connection.hgetall(self.key)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/commands/core.py", line 4887, in hgetall
-    return self.execute_command("HGETALL", name)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/client.py", line 1266, in execute_command
-    conn = self.connection or pool.get_connection(command_name, **options)
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 1457, in get_connection
-    connection.connect()
-  File "/home/abhishek/frappe-bench/env/lib/python3.10/site-packages/redis/connection.py", line 705, in connect
-    raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
+2025-11-03 15:06:38,560 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-11-03 15:06:39,375 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-11-03 15:06:39,475 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-11-03 16:01:32,753 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for newsite.com
+2025-11-03 16:01:32,843 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.hourly_reminder because it was found in queue for newsite.com
+2025-11-03 16:01:32,867 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for newsite.com
+2025-11-03 16:01:32,894 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-11-03 16:01:33,027 ERROR scheduler Skipped queueing frappe.pulse.client.send_queued_events because it was found in queue for newsite.com
+2025-11-03 16:01:33,053 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for newsite.com
+2025-11-03 16:01:33,094 ERROR scheduler Skipped queueing erpnext.utilities.doctype.video.video.update_youtube_data because it was found in queue for newsite.com
+2025-11-03 16:01:33,107 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for newsite.com
+2025-11-03 16:01:33,113 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for newsite.com
+2025-11-03 16:01:33,122 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for newsite.com
+2025-11-03 16:01:33,136 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for newsite.com
+2025-11-03 16:01:33,180 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.collect_project_status because it was found in queue for newsite.com
+2025-11-03 16:01:33,190 ERROR scheduler Skipped queueing frappe.email.doctype.newsletter.newsletter.send_scheduled_email because it was found in queue for newsite.com
+2025-11-03 16:01:33,215 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for newsite.com
+2025-11-03 16:01:33,342 ERROR scheduler Skipped queueing frappe.desk.utils.delete_old_exported_report_files because it was found in queue for newsite.com
+2025-11-03 16:01:33,348 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-11-03 16:01:33,375 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for newsite.com
+2025-11-03 16:01:33,384 ERROR scheduler Skipped queueing frappe.search.sqlite_search.build_index_if_not_exists because it was found in queue for newsite.com
+2025-11-03 16:01:33,396 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-11-03 16:01:33,450 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for newsite.com
+2025-11-03 16:01:33,460 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for newsite.com
+2025-11-03 16:01:33,480 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for newsite.com
+2025-11-03 16:01:33,500 ERROR scheduler Skipped queueing erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization because it was found in queue for newsite.com
+2025-11-03 16:01:33,507 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-11-03 16:01:33,533 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for newsite.com
+2025-11-03 16:01:33,589 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for newsite.com
+2025-11-03 16:01:33,595 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.project_status_update_reminder because it was found in queue for newsite.com
+2025-11-03 16:01:33,619 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for newsite.com
+2025-11-03 16:01:33,647 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for newsite.com
+2025-11-03 16:01:33,669 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for newsite.com
+2025-11-03 16:02:34,021 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for newsite.com
+2025-11-03 16:02:34,390 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for newsite.com
+2025-11-03 16:02:34,724 ERROR scheduler Skipped queueing frappe.desk.utils.delete_old_exported_report_files because it was found in queue for newsite.com
+2025-11-03 16:02:34,804 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for newsite.com
+2025-11-03 16:53:45,989 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-11-03 16:53:46,127 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-11-03 16:53:46,272 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-11-03 16:53:46,355 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-11-03 16:54:46,679 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-11-03 16:54:46,900 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-11-03 16:54:46,925 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-11-03 16:54:47,000 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-11-03 16:55:47,370 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-11-03 16:55:47,441 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-11-03 16:55:47,852 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-11-03 16:55:47,957 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-11-03 16:56:48,491 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-11-03 16:56:48,593 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-11-03 16:56:48,653 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-11-03 16:56:48,930 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-11-03 16:57:49,583 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-11-03 16:57:50,091 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-11-03 16:57:50,181 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-11-03 16:57:50,272 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-11-03 16:59:51,251 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-11-03 16:59:51,273 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-11-03 16:59:51,300 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-11-03 16:59:51,693 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-11-03 17:00:52,509 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-11-03 17:00:52,541 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-11-03 17:00:52,599 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for newsite.com
+2025-11-03 17:00:52,736 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-11-03 17:01:53,526 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for newsite.com
+2025-11-03 17:01:53,577 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for newsite.com
+2025-11-03 17:01:53,663 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.hourly_reminder because it was found in queue for newsite.com
+2025-11-03 17:01:53,763 ERROR scheduler Skipped queueing erpnext.utilities.doctype.video.video.update_youtube_data because it was found in queue for newsite.com
+2025-11-03 17:01:53,860 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for newsite.com
+2025-11-03 17:01:53,893 ERROR scheduler Skipped queueing frappe.desk.utils.delete_old_exported_report_files because it was found in queue for newsite.com
+2025-11-03 17:01:53,933 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.project_status_update_reminder because it was found in queue for newsite.com
+2025-11-03 17:01:53,978 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for newsite.com
+2025-11-03 17:01:54,092 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for newsite.com
+2025-11-03 17:01:54,183 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.collect_project_status because it was found in queue for newsite.com
+2025-11-03 17:01:54,326 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for newsite.com
+2025-11-03 17:01:54,451 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for newsite.com
+2025-11-03 17:01:54,653 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for newsite.com
+2025-11-03 17:01:54,733 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for newsite.com
+2025-11-03 17:01:54,811 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for newsite.com
+2025-11-03 17:01:54,906 ERROR scheduler Skipped queueing erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization because it was found in queue for newsite.com
+2025-11-03 17:01:55,021 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for newsite.com
+2025-11-03 17:01:55,209 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for newsite.com
+2025-11-04 19:09:58,050 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily because it was found in queue for newsite.com
+2025-11-04 19:09:58,312 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.depreciation.post_depreciation_entries because it was found in queue for newsite.com
+2025-11-04 19:09:58,362 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for newsite.com
+2025-11-04 19:09:58,427 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.daily_backup because it was found in queue for newsite.com
+2025-11-04 19:09:58,476 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for newsite.com
+2025-11-04 19:09:58,504 ERROR scheduler Skipped queueing frappe.sessions.clear_expired_sessions because it was found in queue for newsite.com
+2025-11-04 19:09:58,600 ERROR scheduler Skipped queueing erpnext.selling.doctype.quotation.quotation.set_expired_status because it was found in queue for newsite.com
+2025-11-04 19:09:58,919 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.project_status_update_reminder because it was found in queue for newsite.com
+2025-11-04 19:09:58,925 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for newsite.com
+2025-11-04 19:09:58,933 ERROR scheduler Skipped queueing frappe.automation.doctype.auto_repeat.auto_repeat.make_auto_repeat_entry because it was found in queue for newsite.com
+2025-11-04 19:09:58,940 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for newsite.com
+2025-11-04 19:09:58,951 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for newsite.com
+2025-11-04 19:09:58,962 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for newsite.com
+2025-11-04 19:09:58,980 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_settings.energy_point_settings.allocate_review_points because it was found in queue for newsite.com
+2025-11-04 19:09:59,008 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for newsite.com
+2025-11-04 19:09:59,013 ERROR scheduler Skipped queueing frappe.desk.notifications.clear_notifications because it was found in queue for newsite.com
+2025-11-04 19:09:59,069 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.remove_unverified_record because it was found in queue for newsite.com
+2025-11-04 19:09:59,208 ERROR scheduler Skipped queueing erpnext.support.doctype.issue.issue.auto_close_tickets because it was found in queue for newsite.com
+2025-11-04 19:09:59,252 ERROR scheduler Skipped queueing frappe.core.doctype.log_settings.log_settings.run_log_clean_up because it was found in queue for newsite.com
+2025-11-04 19:09:59,270 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for newsite.com
+2025-11-04 19:09:59,283 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.update_project_sales_billing because it was found in queue for newsite.com
+2025-11-04 19:09:59,315 ERROR scheduler Skipped queueing erpnext.setup.doctype.email_digest.email_digest.send because it was found in queue for newsite.com
+2025-11-04 19:09:59,326 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for newsite.com
+2025-11-04 19:09:59,383 ERROR scheduler Skipped queueing frappe.email.doctype.auto_email_report.auto_email_report.send_daily because it was found in queue for newsite.com
+2025-11-04 19:09:59,394 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily because it was found in queue for newsite.com
+2025-11-04 19:09:59,399 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for newsite.com
+2025-11-04 19:09:59,561 ERROR scheduler Skipped queueing erpnext.crm.utils.open_leads_opportunities_based_on_todays_event because it was found in queue for newsite.com
+2025-11-04 19:09:59,583 ERROR scheduler Skipped queueing frappe.core.doctype.user_invitation.user_invitation.mark_expired_invitations because it was found in queue for newsite.com
+2025-11-04 19:09:59,725 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for newsite.com
+2025-11-04 19:09:59,738 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.auto_update_latest_price_in_all_boms because it was found in queue for newsite.com
+2025-11-04 19:09:59,950 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_contacts.google_contacts.sync because it was found in queue for newsite.com
+2025-11-04 19:10:00,019 ERROR scheduler Skipped queueing frappe.desk.utils.delete_old_exported_report_files because it was found in queue for newsite.com
+2025-11-04 19:10:00,158 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for newsite.com
+2025-11-04 19:10:00,263 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset_maintenance_log.asset_maintenance_log.update_asset_maintenance_log_status because it was found in queue for newsite.com
+2025-11-04 19:10:00,328 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_subscription.process_subscription.create_subscription_process because it was found in queue for newsite.com
+2025-11-04 21:54:33,184 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for newsite.com
+2025-11-04 21:54:33,539 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for newsite.com
+2025-11-04 21:54:33,557 ERROR scheduler Skipped queueing erpnext.accounts.doctype.gl_entry.gl_entry.rename_gle_sle_docs because it was found in queue for newsite.com
+2025-11-04 21:54:33,620 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for newsite.com
+2025-11-04 21:54:33,912 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for newsite.com
+2025-11-04 21:54:34,030 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.collect_project_status because it was found in queue for newsite.com
+2025-11-04 21:54:34,080 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for newsite.com
+2025-11-04 21:54:34,330 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.hourly_reminder because it was found in queue for newsite.com
+2025-11-04 21:54:34,350 ERROR scheduler Skipped queueing frappe.desk.utils.delete_old_exported_report_files because it was found in queue for newsite.com
+2025-11-04 21:54:34,398 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for newsite.com
+2025-11-04 21:54:34,419 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for newsite.com
+2025-11-04 21:54:34,458 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for newsite.com
+2025-11-04 21:54:34,470 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for newsite.com
+2025-11-04 21:54:34,525 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for newsite.com
+2025-11-04 21:54:34,592 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for newsite.com
+2025-11-04 21:54:34,725 ERROR scheduler Skipped queueing erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization because it was found in queue for newsite.com
+2025-11-05 00:01:15,675 ERROR scheduler Skipped queueing erpnext.assets.doctype.asset.depreciation.post_depreciation_entries because it was found in queue for newsite.com
+2025-11-05 00:01:16,459 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-11-05 00:01:16,477 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for newsite.com
+2025-11-05 00:01:16,496 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for newsite.com
+2025-11-05 00:01:16,502 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.daily_backup because it was found in queue for newsite.com
+2025-11-05 00:01:16,536 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for newsite.com
+2025-11-05 00:01:16,545 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for newsite.com
+2025-11-05 00:01:16,556 ERROR scheduler Skipped queueing erpnext.selling.doctype.quotation.quotation.set_expired_status because it was found in queue for newsite.com
+2025-11-05 00:01:16,562 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.remove_unverified_record because it was found in queue for newsite.com
+2025-11-05 00:01:16,570 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_subscription.process_subscription.create_subscription_process because it was found in queue for newsite.com
+2025-11-05 00:01:16,576 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_contacts.google_contacts.sync because it was found in queue for newsite.com
+2025-11-05 00:01:16,590 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for newsite.com
+2025-11-05 00:01:16,598 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for newsite.com
+2025-11-05 00:01:16,606 ERROR scheduler Skipped queueing frappe.sessions.clear_expired_sessions because it was found in queue for newsite.com
+2025-11-05 00:01:16,614 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for newsite.com
+2025-11-05 00:01:16,659 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.send_project_status_email_to_users because it was found in queue for newsite.com
+2025-11-05 00:01:16,686 ERROR scheduler Skipped queueing erpnext.accounts.doctype.fiscal_year.fiscal_year.auto_create_fiscal_year because it was found in queue for newsite.com
+2025-11-05 00:01:16,698 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.auto_update_latest_price_in_all_boms because it was found in queue for newsite.com
+2025-11-05 00:01:16,708 ERROR scheduler Skipped queueing frappe.desk.utils.delete_old_exported_report_files because it was found in queue for newsite.com
+2025-11-05 00:01:16,715 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for newsite.com
+2025-11-05 00:01:16,751 ERROR scheduler Skipped queueing frappe.core.doctype.log_settings.log_settings.run_log_clean_up because it was found in queue for newsite.com
+2025-11-05 00:01:16,823 ERROR scheduler Skipped queueing frappe.core.doctype.user_invitation.user_invitation.mark_expired_invitations because it was found in queue for newsite.com
+2025-11-05 00:01:16,832 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily because it was found in queue for newsite.com
+2025-11-05 00:01:16,907 ERROR scheduler Skipped queueing erpnext.setup.doctype.email_digest.email_digest.send because it was found in queue for newsite.com
+2025-11-05 00:01:16,913 ERROR scheduler Skipped queueing frappe.email.doctype.auto_email_report.auto_email_report.send_daily because it was found in queue for newsite.com
+2025-11-05 00:01:16,929 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_settings.energy_point_settings.allocate_review_points because it was found in queue for newsite.com
+2025-11-05 00:01:16,946 ERROR scheduler Skipped queueing frappe.desk.notifications.clear_notifications because it was found in queue for newsite.com
+2025-11-05 00:01:16,955 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for newsite.com
+2025-11-05 00:01:16,963 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for newsite.com
+2025-11-05 00:01:16,974 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for newsite.com
+2025-11-05 00:01:16,979 ERROR scheduler Skipped queueing erpnext.crm.utils.open_leads_opportunities_based_on_todays_event because it was found in queue for newsite.com
+2025-11-05 00:01:16,990 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for newsite.com
+2025-11-05 00:01:17,001 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for newsite.com
+2025-11-05 00:01:17,010 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily because it was found in queue for newsite.com
+2025-11-05 00:01:17,030 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for newsite.com
+2025-11-05 11:40:20,964 ERROR scheduler Skipped queueing frappe.email.doctype.newsletter.newsletter.send_scheduled_email because it was found in queue for newsite.com
+2025-11-05 11:40:21,556 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for newsite.com
+2025-11-05 11:40:21,587 ERROR scheduler Skipped queueing erpnext.utilities.bulk_transaction.retry because it was found in queue for newsite.com
+2025-11-05 11:40:21,794 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for newsite.com
+2025-11-05 11:40:21,976 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for newsite.com
+2025-11-05 11:40:22,159 ERROR scheduler Skipped queueing frappe.search.sqlite_search.build_index_if_not_exists because it was found in queue for newsite.com
+2025-11-05 11:40:22,187 ERROR scheduler Skipped queueing erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries because it was found in queue for newsite.com
+2025-11-05 11:40:22,205 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for newsite.com
+2025-11-05 11:40:22,229 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for newsite.com
+2025-11-05 11:40:22,249 ERROR scheduler Skipped queueing erpnext.utilities.doctype.video.video.update_youtube_data because it was found in queue for newsite.com
+2025-11-05 11:40:22,547 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for newsite.com
+2025-11-05 11:40:22,791 ERROR scheduler Skipped queueing frappe.desk.utils.delete_old_exported_report_files because it was found in queue for newsite.com
+2025-11-05 11:40:22,900 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for newsite.com
+2025-11-05 11:40:24,681 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for newsite.com
+2025-11-05 11:40:26,742 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for newsite.com
+2025-11-05 11:40:26,819 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.hourly_reminder because it was found in queue for newsite.com
+2025-11-05 11:40:27,712 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for newsite.com
+2025-11-05 11:40:27,756 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for newsite.com
+2025-11-05 11:40:28,000 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for newsite.com
+2025-11-05 11:40:28,058 ERROR scheduler Skipped queueing erpnext.projects.doctype.project.project.project_status_update_reminder because it was found in queue for newsite.com

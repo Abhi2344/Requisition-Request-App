@@ -34,3 +34,33 @@ Backup Summary for newsite.com at 2025-11-02 00:00:40.015846
 Config  : ./newsite.com/private/backups/20251102_000009-newsite_com-site_config_backup.json 161.0B
 Database: ./newsite.com/private/backups/20251102_000009-newsite_com-database.sql.gz         1.0MiB
 Backup for Site newsite.com has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_7437b7afe5ee45d9 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _7437b7afe5ee45d9 | /usr/bin/gzip >> ./newsite.com/private/backups/20251104_120009-newsite_com-database.sql.gz
+
+Backup Summary for newsite.com at 2025-11-04 12:00:23.440507
+Config  : ./newsite.com/private/backups/20251104_120009-newsite_com-site_config_backup.json 161.0B
+Database: ./newsite.com/private/backups/20251104_120009-newsite_com-database.sql.gz         1.2MiB
+Backup for Site newsite.com has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_7437b7afe5ee45d9 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _7437b7afe5ee45d9 | /usr/bin/gzip >> ./newsite.com/private/backups/20251105_000022-newsite_com-database.sql.gz
+
+Backup Summary for newsite.com at 2025-11-05 00:01:34.711293
+Config  : ./newsite.com/private/backups/20251105_000022-newsite_com-site_config_backup.json 161.0B
+Database: ./newsite.com/private/backups/20251105_000022-newsite_com-database.sql.gz         1.2MiB
+Backup for Site newsite.com has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_7437b7afe5ee45d9 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _7437b7afe5ee45d9 | /usr/bin/gzip >> ./newsite.com/private/backups/20251105_120015-newsite_com-database.sql.gz
+
+Backup Summary for newsite.com at 2025-11-05 12:01:06.569120
+Config  : ./newsite.com/private/backups/20251105_120015-newsite_com-site_config_backup.json 161.0B
+Database: ./newsite.com/private/backups/20251105_120015-newsite_com-database.sql.gz         1.2MiB
+Backup for Site newsite.com has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_7437b7afe5ee45d9 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _7437b7afe5ee45d9 | /usr/bin/gzip >> ./newsite.com/private/backups/20251110_180008-newsite_com-database.sql.gz
+
+Backup Summary for newsite.com at 2025-11-10 18:00:41.951019
+Config  : ./newsite.com/private/backups/20251110_180008-newsite_com-site_config_backup.json 161.0B
+Database: ./newsite.com/private/backups/20251110_180008-newsite_com-database.sql.gz         1.2MiB
+Backup for Site newsite.com has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_7437b7afe5ee45d9 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _7437b7afe5ee45d9 | /usr/bin/gzip >> ./newsite.com/private/backups/20260119_120017-newsite_com-database.sql.gz
+
+Backup Summary for newsite.com at 2026-01-19 12:01:21.388757
+Config  : ./newsite.com/private/backups/20260119_120017-newsite_com-site_config_backup.json 183.0B
+Database: ./newsite.com/private/backups/20260119_120017-newsite_com-database.sql.gz         952.4KiB
+Backup for Site newsite.com has been successfully completed

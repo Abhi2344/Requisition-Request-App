@@ -360,3 +360,318 @@
 2025-11-02 14:04:29,881 INFO /usr/local/bin/bench worker
 2025-11-02 14:04:29,912 INFO /usr/local/bin/bench watch
 2025-11-02 15:46:38,130 INFO /usr/local/bin/bench add .
+2025-11-03 13:38:09,866 INFO /usr/local/bin/bench start
+2025-11-03 13:38:13,362 INFO /usr/local/bin/bench serve --port 8000
+2025-11-03 13:38:13,726 INFO /usr/local/bin/bench schedule
+2025-11-03 13:38:13,986 INFO /usr/local/bin/bench worker
+2025-11-03 13:38:14,105 INFO /usr/local/bin/bench watch
+2025-11-03 13:42:58,588 INFO /usr/local/bin/bench start
+2025-11-03 13:45:13,859 INFO /usr/local/bin/bench start
+2025-11-03 13:45:14,969 INFO /usr/local/bin/bench watch
+2025-11-03 13:45:15,116 INFO /usr/local/bin/bench serve --port 8000
+2025-11-03 13:45:15,337 INFO /usr/local/bin/bench worker
+2025-11-03 13:45:15,663 INFO /usr/local/bin/bench schedule
+2025-11-03 14:01:02,011 INFO /usr/local/bin/bench migrate
+2025-11-03 14:20:04,959 INFO /usr/local/bin/bench restart
+2025-11-03 14:20:06,543 INFO A newer version of bench is available: 5.25.11 → 5.26.0
+2025-11-03 14:20:16,121 INFO /usr/local/bin/bench start
+2025-11-03 14:22:05,387 INFO /usr/local/bin/bench start
+2025-11-03 14:22:06,454 INFO /usr/local/bin/bench serve --port 8000
+2025-11-03 14:22:06,651 INFO /usr/local/bin/bench watch
+2025-11-03 14:22:06,705 INFO /usr/local/bin/bench schedule
+2025-11-03 14:22:06,878 INFO /usr/local/bin/bench worker
+2025-11-03 14:22:35,950 INFO /usr/local/bin/bench start
+2025-11-03 14:22:37,059 INFO /usr/local/bin/bench watch
+2025-11-03 14:22:37,062 INFO /usr/local/bin/bench schedule
+2025-11-03 14:22:37,197 INFO /usr/local/bin/bench serve --port 8000
+2025-11-03 14:22:38,280 INFO /usr/local/bin/bench worker
+2025-11-03 14:48:14,617 INFO /usr/local/bin/bench migrate
+2025-11-03 14:52:09,995 INFO /usr/local/bin/bench restart
+2025-11-03 14:52:11,266 INFO A newer version of bench is available: 5.25.11 → 5.26.0
+2025-11-03 14:52:17,876 INFO /usr/local/bin/bench start
+2025-11-03 14:52:19,260 INFO /usr/local/bin/bench schedule
+2025-11-03 14:54:00,393 INFO /usr/local/bin/bench start
+2025-11-03 14:54:01,194 INFO /usr/local/bin/bench serve --port 8000
+2025-11-03 14:54:01,216 INFO /usr/local/bin/bench watch
+2025-11-03 14:54:01,220 INFO /usr/local/bin/bench worker
+2025-11-03 14:54:01,300 INFO /usr/local/bin/bench schedule
+2025-11-03 15:02:57,623 INFO /usr/local/bin/bench start
+2025-11-03 15:04:22,889 INFO /usr/local/bin/bench start
+2025-11-03 15:04:24,723 INFO /usr/local/bin/bench watch
+2025-11-03 15:04:24,899 INFO /usr/local/bin/bench worker
+2025-11-03 15:04:25,822 INFO /usr/local/bin/bench serve --port 8000
+2025-11-03 15:04:25,847 INFO /usr/local/bin/bench schedule
+2025-11-03 15:04:58,285 INFO /usr/local/bin/bench migrate
+2025-11-03 15:48:08,876 INFO /usr/local/bin/bench migarte
+2025-11-03 15:48:17,304 INFO /usr/local/bin/bench migrate
+2025-11-03 15:49:53,011 INFO /usr/local/bin/bench restart
+2025-11-03 15:49:55,001 INFO A newer version of bench is available: 5.25.11 → 5.27.0
+2025-11-03 15:49:58,862 INFO /usr/local/bin/bench start
+2025-11-03 15:51:50,267 INFO /usr/local/bin/bench start
+2025-11-03 15:51:51,489 INFO /usr/local/bin/bench schedule
+2025-11-03 15:51:51,631 INFO /usr/local/bin/bench watch
+2025-11-03 15:51:51,704 INFO /usr/local/bin/bench worker
+2025-11-03 15:51:51,973 INFO /usr/local/bin/bench serve --port 8000
+2025-11-03 15:54:16,445 INFO /usr/local/bin/bench start
+2025-11-03 15:54:17,920 INFO /usr/local/bin/bench serve --port 8000
+2025-11-03 15:54:18,101 INFO /usr/local/bin/bench watch
+2025-11-03 15:54:18,374 INFO /usr/local/bin/bench worker
+2025-11-03 15:54:18,574 INFO /usr/local/bin/bench schedule
+2025-11-03 19:26:50,458 INFO /usr/local/bin/bench start
+2025-11-03 19:26:52,391 INFO /usr/local/bin/bench schedule
+2025-11-03 19:26:52,689 INFO /usr/local/bin/bench serve --port 8000
+2025-11-03 19:26:52,710 INFO /usr/local/bin/bench watch
+2025-11-03 19:26:52,783 INFO /usr/local/bin/bench worker
+2025-11-04 12:00:02,926 INFO /usr/local/bin/bench --verbose --site all backup
+2025-11-04 12:06:21,113 INFO /usr/local/bin/bench new-app school
+2025-11-04 12:06:21,168 LOG creating new app school
+2025-11-04 12:08:50,852 LOG Installing school
+2025-11-04 12:08:50,854 DEBUG cd /home/abhishek/frappe-bench && /home/abhishek/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/abhishek/frappe-bench/apps/school 
+2025-11-04 12:09:00,055 DEBUG bench build --app school
+2025-11-04 12:09:00,270 INFO /usr/local/bin/bench build --app school
+2025-11-04 12:09:17,566 INFO A newer version of bench is available: 5.25.11 → 5.27.0
+2025-11-04 12:14:11,444 INFO /usr/local/bin/bench --site newsite.com install-app school
+2025-11-04 19:06:11,655 INFO /usr/local/bin/bench --site newsite.com make-doctype Student --module school
+2025-11-04 19:07:12,865 INFO /usr/local/bin/bench --site newsite.com make-doctype Student --module School
+2025-11-04 19:07:48,394 INFO /usr/local/bin/bench start
+2025-11-04 19:07:50,153 INFO /usr/local/bin/bench serve --port 8000
+2025-11-04 19:07:50,687 INFO /usr/local/bin/bench schedule
+2025-11-04 19:07:51,089 INFO /usr/local/bin/bench watch
+2025-11-04 19:07:51,544 INFO /usr/local/bin/bench worker
+2025-11-04 21:52:06,032 INFO /usr/local/bin/bench start
+2025-11-04 21:52:08,376 INFO /usr/local/bin/bench worker
+2025-11-04 21:52:08,873 INFO /usr/local/bin/bench serve --port 8000
+2025-11-04 21:52:08,946 INFO /usr/local/bin/bench watch
+2025-11-04 21:52:09,064 INFO /usr/local/bin/bench schedule
+2025-11-05 00:00:10,397 INFO /usr/local/bin/bench --verbose --site all backup
+2025-11-05 11:37:43,898 INFO /usr/local/bin/bench start
+2025-11-05 11:37:47,732 INFO /usr/local/bin/bench schedule
+2025-11-05 11:37:48,096 INFO /usr/local/bin/bench serve --port 8000
+2025-11-05 11:37:48,340 INFO /usr/local/bin/bench worker
+2025-11-05 11:37:48,753 INFO /usr/local/bin/bench watch
+2025-11-05 12:00:03,813 INFO /usr/local/bin/bench --verbose --site all backup
+2025-11-05 15:19:29,544 INFO /usr/local/bin/bench start
+2025-11-05 15:21:04,495 INFO /usr/local/bin/bench start
+2025-11-05 15:21:08,248 INFO /usr/local/bin/bench watch
+2025-11-05 15:21:08,402 INFO /usr/local/bin/bench serve --port 8000
+2025-11-05 15:21:08,871 INFO /usr/local/bin/bench schedule
+2025-11-05 15:21:09,934 INFO /usr/local/bin/bench worker
+2025-11-10 16:22:02,807 INFO /usr/local/bin/bench start
+2025-11-10 16:22:07,515 INFO /usr/local/bin/bench worker
+2025-11-10 16:22:07,709 INFO /usr/local/bin/bench watch
+2025-11-10 16:22:07,728 INFO /usr/local/bin/bench serve --port 8000
+2025-11-10 16:22:07,806 INFO /usr/local/bin/bench schedule
+2025-11-10 18:00:03,121 INFO /usr/local/bin/bench --verbose --site all backup
+2025-11-10 21:03:25,221 INFO /usr/local/bin/bench set-config -g developer_mode 1
+2025-11-10 21:05:01,724 INFO /usr/local/bin/bench migrate
+2025-11-10 21:06:04,330 INFO /usr/local/bin/bench start
+2025-11-10 21:06:06,773 INFO /usr/local/bin/bench serve --port 8000
+2025-11-10 21:09:12,224 INFO /usr/local/bin/bench start
+2025-11-10 21:09:14,448 INFO /usr/local/bin/bench serve --port 8000
+2025-11-10 21:10:07,763 INFO /usr/local/bin/bench start
+2025-11-10 21:10:11,416 INFO /usr/local/bin/bench start
+2025-11-10 21:10:43,273 INFO /usr/local/bin/bench start
+2025-11-10 21:10:44,583 INFO /usr/local/bin/bench serve --port 8000
+2025-11-10 21:10:44,721 INFO /usr/local/bin/bench schedule
+2025-11-10 21:10:45,026 INFO /usr/local/bin/bench worker
+2025-11-10 21:10:45,250 INFO /usr/local/bin/bench watch
+                                                                              2025-11-11 00:34:08,104 INFO /usr/local/bin/bench start
+2025-11-11 00:34:10,345 INFO /usr/local/bin/bench schedule
+2025-11-11 00:34:10,525 INFO /usr/local/bin/bench watch
+2025-11-11 00:34:10,555 INFO /usr/local/bin/bench serve --port 8000
+2025-11-11 00:34:10,676 INFO /usr/local/bin/bench worker
+2025-11-11 11:33:05,242 INFO /usr/local/bin/bench start
+2025-11-11 11:33:07,383 INFO /usr/local/bin/bench serve --port 8000
+2025-11-11 11:33:07,844 INFO /usr/local/bin/bench schedule
+2025-11-11 11:33:07,922 INFO /usr/local/bin/bench watch
+2025-11-11 11:33:07,959 INFO /usr/local/bin/bench worker
+2025-11-11 15:35:34,135 INFO /usr/local/bin/bench start
+2025-11-11 15:35:35,396 INFO /usr/local/bin/bench serve --port 8000
+2025-11-11 15:35:35,821 INFO /usr/local/bin/bench watch
+2025-11-11 15:35:35,831 INFO /usr/local/bin/bench schedule
+2025-11-11 15:35:36,092 INFO /usr/local/bin/bench worker
+2025-11-25 14:16:58,876 INFO /usr/local/bin/bench start
+2025-11-25 14:17:05,114 INFO /usr/local/bin/bench serve --port 8000
+2025-11-25 14:17:05,273 INFO /usr/local/bin/bench schedule
+2025-11-25 14:17:06,188 INFO /usr/local/bin/bench watch
+2025-11-25 14:17:07,828 INFO /usr/local/bin/bench worker
+2026-01-13 16:08:51,620 INFO /usr/local/bin/bench start
+2026-01-13 16:08:58,537 INFO /usr/local/bin/bench watch
+2026-01-13 16:08:58,627 INFO /usr/local/bin/bench serve --port 8000
+2026-01-13 16:08:59,109 INFO /usr/local/bin/bench worker
+2026-01-13 16:08:59,135 INFO /usr/local/bin/bench schedule
+2026-01-13 20:15:48,676 INFO /usr/local/bin/bench get-app https://github.com/defendicon/POS-Awesome-V15.git
+2026-01-13 20:15:48,825 LOG Getting POS-Awesome-V15
+2026-01-13 20:15:48,825 DEBUG cd ./apps && git clone https://github.com/defendicon/POS-Awesome-V15.git  --depth 1 --origin upstream
+2026-01-13 20:15:52,932 LOG Installing posawesome
+2026-01-13 20:15:52,952 DEBUG cd /home/abhishek/frappe-bench && /home/abhishek/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/abhishek/frappe-bench/apps/posawesome 
+2026-01-13 20:16:02,303 DEBUG cd /home/abhishek/frappe-bench/apps/posawesome && yarn install --check-files
+2026-01-13 20:21:47,272 DEBUG bench build --app posawesome
+2026-01-13 20:21:48,950 INFO /usr/local/bin/bench build --app posawesome
+2026-01-13 20:22:54,255 INFO A newer version of bench is available: 5.25.11 → 5.28.0
+2026-01-16 13:06:08,150 INFO /usr/local/bin/bench start
+2026-01-16 13:06:09,928 INFO /usr/local/bin/bench serve --port 8000
+2026-01-16 13:06:09,977 INFO /usr/local/bin/bench schedule
+2026-01-16 13:06:10,038 INFO /usr/local/bin/bench worker
+2026-01-16 13:06:10,073 INFO /usr/local/bin/bench watch
+2026-01-16 13:10:49,024 INFO /usr/local/bin/bench set-config developer_mode 1
+2026-01-16 13:12:03,429 INFO /usr/local/bin/bench new-app requisition_app
+2026-01-16 13:12:03,585 LOG creating new app requisition_app
+2026-01-16 13:12:56,145 LOG Installing requisition_app
+2026-01-16 13:12:56,147 DEBUG cd /home/abhishek/frappe-bench && /home/abhishek/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/abhishek/frappe-bench/apps/requisition_app 
+2026-01-16 13:13:03,707 DEBUG bench build --app requisition_app
+2026-01-16 13:13:04,101 INFO /usr/local/bin/bench build --app requisition_app
+2026-01-16 13:13:15,050 INFO A newer version of bench is available: 5.25.11 → 5.29.0
+2026-01-16 13:18:03,947 INFO /usr/local/bin/bench --site newsite.com install-app requisition_app
+2026-01-16 13:18:38,666 INFO /usr/local/bin/bench start
+2026-01-16 13:18:39,844 INFO /usr/local/bin/bench schedule
+2026-01-16 13:18:40,223 INFO /usr/local/bin/bench worker
+2026-01-16 13:18:40,373 INFO /usr/local/bin/bench serve --port 8000
+2026-01-16 13:20:47,119 INFO /usr/local/bin/bench start
+2026-01-16 13:20:47,839 INFO /usr/local/bin/bench watch
+2026-01-16 13:20:48,071 INFO /usr/local/bin/bench serve --port 8000
+2026-01-16 13:20:48,101 INFO /usr/local/bin/bench schedule
+2026-01-16 13:20:48,108 INFO /usr/local/bin/bench worker
+2026-01-17 15:52:05,955 INFO /usr/local/bin/bench start
+2026-01-17 15:52:07,412 INFO /usr/local/bin/bench serve --port 8000
+2026-01-17 15:52:07,539 INFO /usr/local/bin/bench watch
+2026-01-17 15:52:07,553 INFO /usr/local/bin/bench worker
+2026-01-17 15:52:07,568 INFO /usr/local/bin/bench schedule
+2026-01-18 12:40:45,864 INFO /usr/local/bin/bench start
+2026-01-18 12:40:54,023 INFO /usr/local/bin/bench watch
+2026-01-18 12:40:54,069 INFO /usr/local/bin/bench serve --port 8000
+2026-01-18 12:40:54,201 INFO /usr/local/bin/bench schedule
+2026-01-18 12:40:54,214 INFO /usr/local/bin/bench worker
+2026-01-18 13:22:13,623 INFO /usr/local/bin/bench start
+2026-01-18 13:22:16,214 INFO /usr/local/bin/bench watch
+2026-01-18 13:22:16,456 INFO /usr/local/bin/bench serve --port 8000
+2026-01-18 13:22:16,781 INFO /usr/local/bin/bench schedule
+2026-01-18 13:22:17,043 INFO /usr/local/bin/bench worker
+2026-01-19 12:00:04,418 INFO /usr/local/bin/bench --verbose --site all backup
+2026-01-19 12:24:49,158 INFO /usr/local/bin/bench start
+2026-01-19 12:24:52,304 INFO /usr/local/bin/bench watch
+2026-01-19 12:24:52,489 INFO /usr/local/bin/bench serve --port 8000
+2026-01-19 12:24:52,569 INFO /usr/local/bin/bench schedule
+2026-01-19 12:24:52,632 INFO /usr/local/bin/bench worker
+2026-01-19 13:58:11,488 INFO /usr/local/bin/bench set-config -g server_script_enabled 1
+2026-01-19 13:58:23,654 INFO /usr/local/bin/bench start
+2026-01-19 13:58:25,751 INFO /usr/local/bin/bench serve --port 8000
+2026-01-19 13:58:26,070 INFO /usr/local/bin/bench worker
+2026-01-19 14:02:49,395 INFO /usr/local/bin/bench start
+2026-01-19 14:02:50,423 INFO /usr/local/bin/bench worker
+2026-01-19 14:02:50,432 INFO /usr/local/bin/bench serve --port 8000
+2026-01-19 14:02:50,582 INFO /usr/local/bin/bench schedule
+2026-01-19 14:02:51,037 INFO /usr/local/bin/bench watch
+2026-01-19 14:03:46,053 INFO /usr/local/bin/bench start
+2026-01-19 14:03:46,686 INFO /usr/local/bin/bench serve --port 8000
+2026-01-19 14:03:46,808 INFO /usr/local/bin/bench schedule
+2026-01-19 14:03:46,836 INFO /usr/local/bin/bench watch
+2026-01-19 14:03:46,890 INFO /usr/local/bin/bench worker
+2026-01-19 14:07:27,129 INFO /usr/local/bin/bench restart
+2026-01-19 14:07:28,607 INFO A newer version of bench is available: 5.25.11 → 5.29.0
+2026-01-19 14:07:34,136 INFO /usr/local/bin/bench start
+2026-01-19 14:07:34,715 INFO /usr/local/bin/bench watch
+2026-01-19 14:07:34,715 INFO /usr/local/bin/bench serve --port 8000
+2026-01-19 14:07:34,854 INFO /usr/local/bin/bench worker
+2026-01-19 14:07:34,898 INFO /usr/local/bin/bench schedule
+2026-01-19 14:08:21,744 INFO /usr/local/bin/bench status
+2026-01-19 14:08:48,482 INFO /usr/local/bin/bench start --no-dev
+2026-01-19 14:08:49,156 INFO /usr/local/bin/bench serve --port 8000
+2026-01-19 14:08:49,162 INFO /usr/local/bin/bench worker
+2026-01-19 14:08:49,192 INFO /usr/local/bin/bench watch
+2026-01-19 14:08:49,364 INFO /usr/local/bin/bench schedule
+2026-01-19 14:09:21,359 INFO /usr/local/bin/bench migrate
+2026-01-19 14:09:53,285 INFO /usr/local/bin/bench start
+2026-01-19 14:09:53,904 INFO /usr/local/bin/bench schedule
+2026-01-19 14:09:53,963 INFO /usr/local/bin/bench watch
+2026-01-19 14:09:54,121 INFO /usr/local/bin/bench serve --port 8000
+2026-01-19 14:09:54,221 INFO /usr/local/bin/bench worker
+2026-01-19 14:11:57,133 INFO /usr/local/bin/bench setup requirements
+2026-01-19 14:11:57,149 DEBUG /home/abhishek/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2026-01-19 14:12:03,601 LOG Installing frappe
+2026-01-19 14:12:03,603 DEBUG cd /home/abhishek/frappe-bench && /home/abhishek/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/abhishek/frappe-bench/apps/frappe 
+2026-01-19 14:12:13,586 DEBUG cd /home/abhishek/frappe-bench && /home/abhishek/frappe-bench/env/bin/python -m pip install --quiet --upgrade coverage~=6.5.0 Faker~=18.10.1 pyngrok~=6.0.0 unittest-xml-reporting~=3.2.0 watchdog~=3.0.0 hypothesis~=6.77.0 responses==0.23.1 freezegun~=1.2.2 
+2026-01-19 14:12:34,389 DEBUG cd /home/abhishek/frappe-bench/apps/frappe && yarn install --check-files
+2026-01-19 14:12:35,115 WARNING cd /home/abhishek/frappe-bench/apps/frappe && yarn install --check-files executed with exit code 2
+2026-01-19 14:12:35,115 WARNING /usr/local/bin/bench setup requirements executed with exit code 1
+2026-01-19 14:12:35,819 INFO A newer version of bench is available: 5.25.11 → 5.29.0
+2026-01-19 14:16:34,518 INFO /usr/local/bin/bench setup requirements
+2026-01-19 14:16:34,536 DEBUG /home/abhishek/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2026-01-19 14:16:36,431 LOG Installing frappe
+2026-01-19 14:16:36,433 DEBUG cd /home/abhishek/frappe-bench && /home/abhishek/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/abhishek/frappe-bench/apps/frappe 
+2026-01-19 14:16:41,333 DEBUG cd /home/abhishek/frappe-bench && /home/abhishek/frappe-bench/env/bin/python -m pip install --quiet --upgrade coverage~=6.5.0 Faker~=18.10.1 pyngrok~=6.0.0 unittest-xml-reporting~=3.2.0 watchdog~=3.0.0 hypothesis~=6.77.0 responses==0.23.1 freezegun~=1.2.2 
+2026-01-19 14:16:45,900 DEBUG cd /home/abhishek/frappe-bench/apps/frappe && yarn install --check-files
+2026-01-19 14:16:46,133 WARNING cd /home/abhishek/frappe-bench/apps/frappe && yarn install --check-files executed with exit code 2
+2026-01-19 14:16:46,134 WARNING /usr/local/bin/bench setup requirements executed with exit code 1
+2026-01-19 14:16:46,469 INFO A newer version of bench is available: 5.25.11 → 5.29.0
+2026-01-19 14:17:21,117 INFO /usr/local/bin/bench start --no-dev
+2026-01-19 14:17:39,514 INFO /usr/local/bin/bench restart
+2026-01-19 14:17:39,893 INFO A newer version of bench is available: 5.25.11 → 5.29.0
+2026-01-19 14:22:06,244 INFO /usr/local/bin/bench setup requirements
+2026-01-19 14:22:06,255 DEBUG /home/abhishek/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2026-01-19 14:22:07,915 LOG Installing frappe
+2026-01-19 14:22:07,917 DEBUG cd /home/abhishek/frappe-bench && /home/abhishek/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/abhishek/frappe-bench/apps/frappe 
+2026-01-19 14:22:12,326 DEBUG cd /home/abhishek/frappe-bench && /home/abhishek/frappe-bench/env/bin/python -m pip install --quiet --upgrade coverage~=6.5.0 Faker~=18.10.1 pyngrok~=6.0.0 unittest-xml-reporting~=3.2.0 watchdog~=3.0.0 hypothesis~=6.77.0 responses==0.23.1 freezegun~=1.2.2 
+2026-01-19 14:22:15,379 DEBUG cd /home/abhishek/frappe-bench/apps/frappe && yarn install --check-files
+2026-01-19 14:23:56,380 LOG Installing school
+2026-01-19 14:23:56,383 DEBUG cd /home/abhishek/frappe-bench && /home/abhishek/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/abhishek/frappe-bench/apps/school 
+2026-01-19 14:24:02,328 LOG Installing erpnext
+2026-01-19 14:24:02,329 DEBUG cd /home/abhishek/frappe-bench && /home/abhishek/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/abhishek/frappe-bench/apps/erpnext 
+2026-01-19 14:24:06,123 DEBUG cd /home/abhishek/frappe-bench/apps/erpnext && yarn install --check-files
+2026-01-19 14:24:07,739 LOG Installing posawesome
+2026-01-19 14:24:07,740 DEBUG cd /home/abhishek/frappe-bench && /home/abhishek/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/abhishek/frappe-bench/apps/posawesome 
+2026-01-19 14:24:11,990 DEBUG cd /home/abhishek/frappe-bench/apps/posawesome && yarn install --check-files
+2026-01-19 14:24:24,315 WARNING cd /home/abhishek/frappe-bench/apps/posawesome && yarn install --check-files executed with exit code 1
+2026-01-19 14:24:24,317 WARNING /usr/local/bin/bench setup requirements executed with exit code 1
+2026-01-19 14:24:25,225 INFO A newer version of bench is available: 5.25.11 → 5.29.0
+2026-01-19 15:15:27,274 INFO /usr/local/bin/bench setup requirements
+2026-01-19 15:15:27,289 DEBUG /home/abhishek/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2026-01-19 15:15:29,656 LOG Installing frappe
+2026-01-19 15:15:29,662 DEBUG cd /home/abhishek/frappe-bench && /home/abhishek/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/abhishek/frappe-bench/apps/frappe 
+2026-01-19 15:15:34,229 DEBUG cd /home/abhishek/frappe-bench && /home/abhishek/frappe-bench/env/bin/python -m pip install --quiet --upgrade coverage~=6.5.0 Faker~=18.10.1 pyngrok~=6.0.0 unittest-xml-reporting~=3.2.0 watchdog~=3.0.0 hypothesis~=6.77.0 responses==0.23.1 freezegun~=1.2.2 
+2026-01-19 15:15:38,435 DEBUG cd /home/abhishek/frappe-bench/apps/frappe && yarn install --check-files
+2026-01-19 15:15:52,125 LOG Installing school
+2026-01-19 15:15:52,128 DEBUG cd /home/abhishek/frappe-bench && /home/abhishek/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/abhishek/frappe-bench/apps/school 
+2026-01-19 15:15:56,684 LOG Installing erpnext
+2026-01-19 15:15:56,684 DEBUG cd /home/abhishek/frappe-bench && /home/abhishek/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/abhishek/frappe-bench/apps/erpnext 
+2026-01-19 15:15:59,968 DEBUG cd /home/abhishek/frappe-bench/apps/erpnext && yarn install --check-files
+2026-01-19 15:16:00,546 LOG Installing posawesome
+2026-01-19 15:16:00,546 DEBUG cd /home/abhishek/frappe-bench && /home/abhishek/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/abhishek/frappe-bench/apps/posawesome 
+2026-01-19 15:16:03,691 DEBUG cd /home/abhishek/frappe-bench/apps/posawesome && yarn install --check-files
+2026-01-19 15:16:06,867 WARNING cd /home/abhishek/frappe-bench/apps/posawesome && yarn install --check-files executed with exit code 1
+2026-01-19 15:16:06,867 WARNING /usr/local/bin/bench setup requirements executed with exit code 1
+2026-01-19 15:16:10,052 INFO A newer version of bench is available: 5.25.11 → 5.29.0
+2026-01-19 15:17:16,633 INFO /usr/local/bin/bench restart
+2026-01-19 15:17:16,864 INFO A newer version of bench is available: 5.25.11 → 5.29.0
+2026-01-19 15:17:33,465 INFO /usr/local/bin/bench start
+2026-01-19 15:17:34,509 INFO /usr/local/bin/bench serve --port 8000
+2026-01-19 15:17:34,617 INFO /usr/local/bin/bench worker
+2026-01-19 15:17:34,654 INFO /usr/local/bin/bench schedule
+2026-01-19 15:17:34,750 INFO /usr/local/bin/bench watch
+2026-01-19 15:19:21,492 INFO /usr/local/bin/bench start
+2026-01-19 15:19:22,027 INFO /usr/local/bin/bench watch
+2026-01-19 15:19:22,123 INFO /usr/local/bin/bench worker
+2026-01-19 15:19:22,317 INFO /usr/local/bin/bench schedule
+2026-01-19 15:19:22,365 INFO /usr/local/bin/bench serve --port 8000
+2026-01-19 15:20:23,619 INFO /usr/local/bin/bench start
+2026-01-19 15:20:24,193 INFO /usr/local/bin/bench schedule
+2026-01-19 15:20:24,280 INFO /usr/local/bin/bench watch
+2026-01-19 15:20:24,371 INFO /usr/local/bin/bench serve --port 8000
+2026-01-19 15:20:24,552 INFO /usr/local/bin/bench worker
+2026-01-19 16:14:05,780 INFO /usr/local/bin/bench start
+2026-01-19 16:14:08,498 INFO /usr/local/bin/bench watch
+2026-01-19 16:14:08,866 INFO /usr/local/bin/bench serve --port 8000
+2026-01-19 16:14:08,877 INFO /usr/local/bin/bench worker
+2026-01-19 16:14:09,029 INFO /usr/local/bin/bench schedule
+2026-01-19 16:50:36,116 INFO /usr/local/bin/bench start
+2026-01-19 16:50:38,076 INFO /usr/local/bin/bench serve --port 8000
+2026-01-19 16:50:38,109 INFO /usr/local/bin/bench schedule
+2026-01-19 16:50:38,438 INFO /usr/local/bin/bench watch
+2026-01-19 16:50:38,536 INFO /usr/local/bin/bench worker
+2026-01-19 19:05:00,956 INFO /usr/local/bin/bench start
+2026-01-19 19:05:03,049 INFO /usr/local/bin/bench serve --port 8000
+2026-01-19 19:05:03,099 INFO /usr/local/bin/bench watch
+2026-01-19 19:05:03,366 INFO /usr/local/bin/bench schedule
+2026-01-19 19:05:03,498 INFO /usr/local/bin/bench worker
+2026-01-19 19:49:27,476 INFO /usr/local/bin/bench migrate
+2026-01-19 19:57:12,453 INFO /usr/local/bin/bench export-fixtures --app requisition_app
