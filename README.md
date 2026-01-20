@@ -1,6 +1,6 @@
 <<<<<<< HEAD
-# Special-Price-Approve-Project
+# Requisition Request App
 Project with Frappe
 =======
-# Special Price Approve Project
+# Requisition Request App
 >>>>>>> ef4eb525 (Initial commit)
